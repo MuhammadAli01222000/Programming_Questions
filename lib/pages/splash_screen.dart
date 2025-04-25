@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:programming_questions/core/theme/dimens.dart';
 import 'package:programming_questions/core/theme/strings.dart';
 import 'package:programming_questions/pages/home.dart';
+import 'package:programming_questions/pages/questions.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -39,7 +40,7 @@ class _SplashPageState extends State<SplashPage>
     Future.delayed(const Duration(seconds: 10), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Home()),
+        MaterialPageRoute(builder: (context) => const Questions()),
       );
     });
   }
