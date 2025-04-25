@@ -12,5 +12,6 @@ class DataController {
   Future<void> initilize() async {
     final jsonList = await DataSource.convertor();
     _items = jsonList.map((item) => QuestionModel.fromJson(item)).toList();
+    print("items $_items");
   }
 }

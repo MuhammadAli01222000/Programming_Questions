@@ -1,129 +1,123 @@
 [
     {
-        "id":1,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 1,
+      "question": "Dart dasturlash tili qachon ishlab chiqilgan?",
+      "variant": ["2011", "2013", "2015", "2010"],
+      "correct answer": "2011"
     },
     {
-        "id":2,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 2,
+      "question": "Dart dasturlash tilini kim ishlab chiqqan?",
+      "variant": ["Microsoft", "Oracle", "Google", "Facebook"],
+      "correct answer": "Google"
     },
     {
-        "id":3,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 3,
+      "question": "Dart tili qanday platformada ishlaydi?",
+      "variant": ["Frontend", "Backend", "Cross-platform", "Faqat mobil"],
+      "correct answer": "Cross-platform"
     },
     {
-        "id":3,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 4,
+      "question": "Dart tilining asosiy ishlatilish sohasi nima?",
+      "variant": ["Web serverlar", "Mobil ilovalar", "AI", "OS ishlab chiqish"],
+      "correct answer": "Mobil ilovalar"
     },
     {
-        "id":4,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 5,
+      "question": "Flutter nima?",
+      "variant": ["Dart kutubxonasi", "Ilova", "Framework", "Dartning IDE'si"],
+      "correct answer": "Framework"
     },
     {
-        "id":5,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 6,
+      "question": "Dartda `var` nimani anglatadi?",
+      "variant": ["O'zgaruvchi turi", "Funksiya", "Sinf", "To'g'ri emas"],
+      "correct answer": "O'zgaruvchi turi"
     },
     {
-        "id":6,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 7,
+      "question": "`final` bilan `const` orasidagi farq nima?",
+      "variant": ["Ular bir xil", "`final` faqat classda", "`const` compile time", "`final` run time"],
+      "correct answer": "`const` compile time"
     },
     {
-        "id":7,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 8,
+      "question": "Dartda list qanday aniqlanadi?",
+      "variant": ["Set", "Map", "List", "Array"],
+      "correct answer": "List"
     },
     {
-        "id":8,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 9,
+      "question": "`Map` nima?",
+      "variant": ["Kalit-qiymat juftligi", "Raqamlar ro‘yxati", "Set", "Object"],
+      "correct answer": "Kalit-qiymat juftligi"
     },
     {
-        "id":9,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 10,
+      "question": "`async` va `await` nima uchun ishlatiladi?",
+      "variant": ["List uchun", "Sinflar uchun", "Asinxron kod", "Syncron kod"],
+      "correct answer": "Asinxron kod"
     },
     {
-        "id":10,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 11,
+      "question": "`Future` nima?",
+      "variant": ["Kelajakdagi natija", "Funksiya turi", "Widget", "To‘g‘ri emas"],
+      "correct answer": "Kelajakdagi natija"
     },
     {
-        "id":11,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 12,
+      "question": "Dartda `null safety` qachon joriy etilgan?",
+      "variant": ["2020", "2021", "2019", "2022"],
+      "correct answer": "2021"
     },
     {
-        "id":12,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 13,
+      "question": "`?` belgisi Dartda nimani bildiradi?",
+      "variant": ["Null bo'lishi mumkin", "Boolean", "String", "Function"],
+      "correct answer": "Null bo'lishi mumkin"
     },
     {
-        "id":13,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 14,
+      "question": "`late` kalit so‘zi nima uchun ishlatiladi?",
+      "variant": ["Kechikkan qiymat", "Null", "Map", "Set"],
+      "correct answer": "Kechikkan qiymat"
     },
     {
-        "id":14,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 15,
+      "question": "Dartda `mixins` nima?",
+      "variant": ["Inheritance usuli", "Data type", "Null handling", "List turi"],
+      "correct answer": "Inheritance usuli"
     },
     {
-        "id":15,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 16,
+      "question": "Dartda class qanday yaratiladi?",
+      "variant": ["class MyClass {}", "def MyClass {}", "new MyClass()", "type MyClass {}"],
+      "correct answer": "class MyClass {}"
     },
     {
-        "id":16,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 17,
+      "question": "Dartda `this` kalit so‘zi nimani bildiradi?",
+      "variant": ["Super class", "Joriy obyekt", "Null", "Global"],
+      "correct answer": "Joriy obyekt"
     },
     {
-        "id":17,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 18,
+      "question": "Dartda operator overloading mavjudmi?",
+      "variant": ["Yo‘q", "Ha", "Faqat Flutterda", "Experimental"],
+      "correct answer": "Ha"
     },
     {
-        "id":18,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 19,
+      "question": "Dartda private o‘zgaruvchi qanday belgilanadi?",
+      "variant": ["_nomi bilan", "private", "hidden", "secret"],
+      "correct answer": "_nomi bilan"
     },
     {
-        "id":19,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
-    },
-    {
-        "id":20,
-        "question":"Dart  dasturlash tili qachon elon qilingan ",
-        "variant":["2015","2018","2019","2013"],
-        "correct answer":"2013"
+      "id": 20,
+      "question": "Dartda `factory` constructor nima qiladi?",
+      "variant": ["Obyekt qaytaradi", "List yaratadi", "void", "Null qiymat"],
+      "correct answer": "Obyekt qaytaradi"
     }
-   
-]
+  ]
+  

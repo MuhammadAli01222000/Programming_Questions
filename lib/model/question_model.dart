@@ -1,17 +1,31 @@
 class QuestionModel {
-  final int numberQuestion;
+  final int id;
   final String question;
+  final List<String> variants;
+  final String correctAnswer;
 
-  const QuestionModel({required this.numberQuestion, required this.question});
+  const QuestionModel({
+    required this.id,
+    required this.question,
+    required this.variants,
+    required this.correctAnswer,
+  });
 
   factory QuestionModel.fromJson(Map<String, dynamic> json) {
     return QuestionModel(
-      numberQuestion: json['numberQuestion'] as int,
+      id: json['id'] as int,
       question: json['question'] as String,
+      variants: List<String>.from(json['variant']),
+      correctAnswer: json['correct answer'] as String,
     );
   }
 
   Map<String, Object?> toJson() {
-    return {'numberQuestion': numberQuestion, 'question': question};
+    return {
+      'id': id,
+      'question': question,
+      'variant': variants,
+      'correct answer': correctAnswer,
+    };
   }
 }
