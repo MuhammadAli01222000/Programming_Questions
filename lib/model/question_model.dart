@@ -3,8 +3,10 @@ class QuestionModel {
   final String question;
   final List<String> variants;
   final String correctAnswer;
+  final String infoLink;
 
   const QuestionModel({
+    required this.infoLink,
     required this.id,
     required this.question,
     required this.variants,
@@ -17,6 +19,7 @@ class QuestionModel {
       question: json['question'] as String,
       variants: List<String>.from(json['variant']),
       correctAnswer: json['correct answer'] as String,
+      infoLink: json['infoLink'] as String,
     );
   }
 
@@ -26,6 +29,7 @@ class QuestionModel {
       'question': question,
       'variant': variants,
       'correct answer': correctAnswer,
+      'infoLink': infoLink,
     };
   }
 }
