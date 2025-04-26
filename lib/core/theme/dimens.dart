@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 sealed class AppDimens {
+  static const d8 = 8.0;
+
   static const d12 = 12.0;
   static const d15 = 15.0;
   static const d16 = 16.0;
@@ -17,11 +19,18 @@ sealed class AppDimens {
   static const d150 = 150.0;
   static const d250 = 250.0;
   static const d300 = 300.0;
-  static const h250 = Size.fromHeight(350);
 
   /// padding
   static const p16 = EdgeInsets.all(AppDimens.d16);
+  static const p8 = EdgeInsets.all(AppDimens.d8);
 
   /// margin
   static const m20 = EdgeInsets.symmetric(vertical: d20);
+
+  /// circular
+  static final c16 = BorderRadius.circular(AppDimens.d16);
+
+  /// height
+  static const h100 = SizedBox(height: 100);
+  static const h300 = Size.fromHeight(300);
 }

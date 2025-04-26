@@ -11,4 +11,5 @@ sealed class AppRoutes {
         AppRoutesName.questionsScreen: (context) => const Questions(),
         AppRoutesName.resultScreen: (context) => const ResultScreen(),
       };
+  static void back(context) => Navigator.pop(context);
 }

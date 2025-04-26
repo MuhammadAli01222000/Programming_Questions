@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:programming_questions/core/config/app_routes.dart';
 import 'package:programming_questions/core/theme/colors.dart';
 import 'package:programming_questions/core/theme/dimens.dart';
 import 'package:programming_questions/core/theme/strings.dart';
 import 'package:programming_questions/core/theme/text_style.dart';
+import 'package:programming_questions/core/widgets/button_style.dart';
+import 'package:programming_questions/core/widgets/counter_question_text.dart';
+import 'package:programming_questions/core/widgets/language_text_widget.dart';
+import 'package:programming_questions/core/widgets/savollar.dart';
+import 'package:programming_questions/core/widgets/small_question_counter.dart';
 import 'package:programming_questions/services/data_controller.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:programming_questions/services/network_services.dart';
 
 int index = 0;
 
@@ -22,25 +28,12 @@ class _QuestionsState extends State<Questions> {
   int index = 0;
   bool showLink = false;
 
-  Future<void> _openUrl(String url) async {
-    debugPrint("Trying to launch: $url");
-    final Uri uri = Uri.parse(url);
-    if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
-      debugPrint('xato boldi $url');
-    }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     int length = controller.items.length;
 
     return Scaffold(
-      appBar: _appBar(),
+      appBar: appBar(),
       backgroundColor: AppColors.backroundColor,
       body: Padding(
         padding: AppDimens.p16,
@@ -59,28 +52,7 @@ class _QuestionsState extends State<Questions> {
                 children: [
                   /// qaysi tilni tanlasa shu dasturlash tili keladi
                   const LanguageTextWidget(languageText: AppStrings.dart),
-                  Align(
-                    alignment: Alignment.topLeft,
-                    child: RichText(
-                      textAlign: TextAlign.left,
-                      text: TextSpan(
-                        children: [
-                          const TextSpan(
-                            text: "${AppStrings.quetion}",
-                            style: AppTextStyle.bigText,
-                          ),
-                          TextSpan(
-                            text: " $index",
-                            style: AppTextStyle.bigNumber,
-                          ),
-                          TextSpan(
-                            text: "/$length",
-                            style: AppTextStyle.greyNumber,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  CountQuestionText(index: index, length: length),
 
                   /// todo rangli  indicatorlar  qaysi savolni topib qaysini topmaganini belgilidi
                   SizedBox(
@@ -89,69 +61,30 @@ class _QuestionsState extends State<Questions> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         for (int i = 0; i < controller.items.length; i++)
-                          Expanded(
-                            child: SizedBox(
-                              width: AppDimens.d40,
-                              height: AppDimens.d15,
-                              child: Card(
-                                color: index == i ? Colors.green : Colors.grey,
-                              ),
-                            ),
-                          ),
+                          SmallquestionCounter(index: index, i: i),
                       ],
                     ),
                   ),
-                  Align(
-                    alignment: Alignment.topLeft,
-                    child: Card(
-                      elevation: 0,
-                      color: Colors.transparent,
-                      margin: AppDimens.m20,
-                      child: SizedBox(
-                        width: AppDimens.d300,
-                        height: 150,
-                        child: Center(
-                          child: Text(
-                            item.question,
-                            style: AppTextStyle.questionsText,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
+                  Savollar(item: item),
                   if (showLink)
                     /// show link buttoni
                     OutlinedButton(
-                      onPressed: () => _openUrl(item.infoLink),
+                      onPressed: () => openUrl(item.infoLink),
                       child: const Text(
                         "Batafsil o‘qish",
-                        style: TextStyle(
-                          color: Colors.blueAccent,
-                          decoration: TextDecoration.underline,
-                        ),
+                        style: AppTextStyle.infoButton,
                       ),
                     ),
                   const SizedBox(height: 20),
                   ...item.variants.map((v) {
                     return Padding(
                       /// variant buttoni
-                      padding: const EdgeInsets.all(8.0),
+                      padding: AppDimens.p8,
                       child: SizedBox(
                         width: AppDimens.d300,
                         height: AppDimens.d50,
                         child: OutlinedButton(
-                          style: ButtonStyle(
-                            side: const WidgetStatePropertyAll(
-                              BorderSide(color: AppColors.green, width: 4),
-                            ),
-                            shape: WidgetStatePropertyAll(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(
-                                  AppDimens.d16,
-                                ),
-                              ),
-                            ),
-                          ),
+                          style: AppButtonStyle.selectButtonStyle,
                           onPressed: () {
                             setState(() {
                               index++;
@@ -171,8 +104,12 @@ class _QuestionsState extends State<Questions> {
     );
   }
 
-  AppBar _appBar() {
+  AppBar appBar() {
     return AppBar(
+      leading: IconButton(
+        onPressed: () => AppRoutes.back(context),
+        icon: Icon(Icons.arrow_back, color: AppColors.white),
+      ),
       backgroundColor: AppColors.backroundColor,
       actions: [
         Align(
@@ -188,19 +125,6 @@ class _QuestionsState extends State<Questions> {
           ),
         ),
       ],
-    );
-  }
-}
-
-class LanguageTextWidget extends StatelessWidget {
-  final String languageText;
-  const LanguageTextWidget({super.key, required this.languageText});
-
-  @override
-  Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.topLeft,
-      child: Text(languageText, style: AppTextStyle.programmingLanguageText),
     );
   }
 }

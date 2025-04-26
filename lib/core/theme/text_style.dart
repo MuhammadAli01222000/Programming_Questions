@@ -29,4 +29,14 @@ sealed class AppTextStyle {
     fontWeight: FontWeight.w400,
     color: Color.fromARGB(255, 59, 57, 57),
   );
+  static const infoButton = TextStyle(
+    color: Colors.blueAccent,
+    decoration: TextDecoration.underline,
+  );
+
+  static const languageText = TextStyle(
+    fontSize: AppDimens.d25,
+    fontWeight: FontWeight.w400,
+    color: AppColors.white,
+  );
 }

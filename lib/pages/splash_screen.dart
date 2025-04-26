@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:programming_questions/core/theme/colors.dart';
 import 'package:programming_questions/core/theme/dimens.dart';
 import 'package:programming_questions/core/theme/strings.dart';
-import 'package:programming_questions/pages/home.dart';
+import 'package:programming_questions/core/theme/text_style.dart';
 import 'package:programming_questions/pages/questions.dart';
 
 class SplashPage extends StatefulWidget {
@@ -11,125 +12,159 @@ class SplashPage extends StatefulWidget {
   State<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage>
-    with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<double> _animation;
+class _SplashPageState extends State<SplashPage> {
   int _currentImageIndex = 0;
+  final ScrollController scrollController = ScrollController();
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(
-      duration: const Duration(seconds: 5),
-      vsync: this,
-    )..repeat();
-
-    _animation = Tween<double>(begin: 0, end: -200).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.ease),
-    )..addListener(() {
-      if (_animation.isCompleted) {
-        setState(() {
-          _currentImageIndex = (_currentImageIndex) % listImageUrl.length;
-          _controller.reset();
-          _controller.forward();
-        });
-      }
-    });
-
-    Future.delayed(const Duration(seconds: 10), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const Questions()),
-      );
-    });
   }
 
   @override
   void dispose() {
-    _controller.dispose();
     super.dispose();
+    scrollController.dispose;
   }
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context).width;
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: AppDimens.h250,
-        child: Container(
-          child: Column(
-            children: [
-              SizedBox(height: 100),
-              AnimatedBuilder(
-                animation: _animation,
-                builder: (context, child) {
-                  return Transform.translate(
-                    offset: Offset(_animation.value, 0),
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: [
-                          for (int i = 0; i < listImageUrl.length; i++)
-                            SizedBox(
-                              width: 200,
-                              height: 150,
-                              child: Card(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset(
-                                    listImageUrl[i],
-                                    fit: BoxFit.contain,
-                                  ),
-                                ),
-                              ),
+      backgroundColor: AppColors.backroundColor,
+      appBar: _appBar(size),
+      body: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              AppStrings.selectLanguage,
+              style: AppTextStyle.languageText,
+            ),
+          ),
+          SizedBox(
+            width: size - 3,
+            height: 400,
+            child: GridView.builder(
+              itemCount: listImageUrl.length,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+              ),
+              itemBuilder: (BuildContext context, int index) {
+                return SizedBox(
+                  width: AppDimens.d150,
+                  height: AppDimens.d50,
+                  child: Card(
+                    color: AppColors.green,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: GestureDetector(
+                        onTap: () {
+                          _currentImageIndex = index;
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder:
+                                  (BuildContext context) => const Questions(),
                             ),
-                        ],
+                          );
+                        },
+                        child: Image.asset(listImageUrl[index]),
                       ),
                     ),
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.home),
-      ),
-      body: Center(
-        child: Column(
-          spacing: 80,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const SizedBox(
-              height: 100,
-              width: 100,
-              child: CircularProgressIndicator.adaptive(strokeWidth: 4),
-            ),
-            SizedBox(
-              width: 300,
-              height: 150,
-              child: Stack(
-                children: [
-                  AnimatedBuilder(
-                    animation: _animation,
-                    builder: (context, child) {
-                      return Transform.translate(
-                        offset: Offset(
-                          _animation.value - (_currentImageIndex * 300),
-                          0,
-                        ),
-                      );
-                    },
                   ),
-                ],
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  PreferredSize _appBar(double size) {
+    return PreferredSize(
+      preferredSize: AppDimens.h300,
+      child: Container(
+        decoration: BoxDecoration(
+          shape: BoxShape.rectangle,
+          color: AppColors.green,
+          borderRadius: BorderRadius.circular(AppDimens.d30),
+        ),
+        child: Column(
+          children: [
+            SizedBox(height: AppDimens.d50),
+            SingleChildScrollView(
+              physics: ScrollPhysics(),
+              controller: scrollController,
+              scrollDirection: Axis.horizontal,
+              child: ScrollProgrammingLangugage(
+                size: size,
+                imageIndex: _currentImageIndex,
               ),
             ),
           ],
         ),
       ),
+    );
+  }
+}
+
+class ScrollProgrammingLangugage extends StatelessWidget {
+  final int imageIndex;
+  const ScrollProgrammingLangugage({
+    super.key,
+    required this.size,
+    required this.imageIndex,
+  });
+
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        for (int i = 0; i < listImageUrl.length; i++)
+          SizedBox(
+            width: size - 10,
+            height: 280,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset(
+                  listImageUrl[i],
+                  fit: BoxFit.contain,
+                  width: size - 20,
+                  height: 110,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    AppStrings.listImageText[i],
+                    style: AppTextStyle.languageText,
+                  ),
+                ),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Center(
+                          child: Text(
+                            AppStrings.infoProgrammingLanguage[i],
+                            style: AppTextStyle.languageText,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+      ],
     );
   }
 }
