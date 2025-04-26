@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:programming_questions/core/theme/colors.dart';
+import 'package:programming_questions/core/theme/theme.dart';
 
 bool? value;
 
 class AppCheckButton extends StatefulWidget {
-  AppCheckButton({super.key});
+  final String data;
+  final void Function() onTap;
+  AppCheckButton({super.key, required this.data, required this.onTap});
 
   @override
   State<AppCheckButton> createState() => _AppCheckButtonState();
@@ -13,15 +15,18 @@ class AppCheckButton extends StatefulWidget {
 class _AppCheckButtonState extends State<AppCheckButton> {
   @override
   Widget build(BuildContext context) {
-    return Checkbox(
-      shape: CircleBorder(),
-      activeColor: AppColors.green,
-
-      value: value,
-      onChanged: (check) {
-        check = value;
-        setState(() {});
-      },
+    return SizedBox(
+      width: AppDimens.d300,
+      height: AppDimens.d50,
+      child: OutlinedButton(
+        style: AppButtonStyle.selectButtonStyle,
+        onPressed: () {
+          setState(() {
+            index++;
+          });
+        },
+        child: Text(widget.data, style: AppTextStyle.languageText),
+      ),
     );
   }
 }

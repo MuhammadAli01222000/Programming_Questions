@@ -1,16 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:programming_questions/core/config/app_routes.dart';
-import 'package:programming_questions/core/theme/colors.dart';
-import 'package:programming_questions/core/theme/dimens.dart';
-import 'package:programming_questions/core/theme/strings.dart';
-import 'package:programming_questions/core/theme/text_style.dart';
-import 'package:programming_questions/core/widgets/button_style.dart';
-import 'package:programming_questions/core/widgets/counter_question_text.dart';
-import 'package:programming_questions/core/widgets/language_text_widget.dart';
-import 'package:programming_questions/core/widgets/savollar.dart';
-import 'package:programming_questions/core/widgets/small_question_counter.dart';
-import 'package:programming_questions/services/data_controller.dart';
-import 'package:programming_questions/services/network_services.dart';
+import 'package:programming_questions/core/theme/theme.dart';
 
 int index = 0;
 

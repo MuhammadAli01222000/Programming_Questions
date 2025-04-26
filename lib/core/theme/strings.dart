@@ -22,4 +22,6 @@ sealed class AppStrings {
     "JavaScript: Veb uchun interaktiv dasturlash  til",
     "Python: Ma'lumot tahlili, AI, veb uchun o'qishga dasturlash oson til.",
   ];
+
+  static const levelProgramist = ["Junior", "Middle", "Senior"];
 }

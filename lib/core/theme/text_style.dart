@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:programming_questions/core/theme/colors.dart';
-import 'package:programming_questions/core/theme/dimens.dart';
-import 'package:programming_questions/pages/questions.dart';
+import 'package:programming_questions/core/theme/theme.dart';
 
 sealed class AppTextStyle {
   static const bigText = TextStyle(
