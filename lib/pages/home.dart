@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:programming_questions/core/theme/colors.dart';
-import 'package:programming_questions/core/theme/dimens.dart';
 import 'package:programming_questions/core/theme/theme.dart';
 import 'package:programming_questions/core/widgets/check_button.dart';
 

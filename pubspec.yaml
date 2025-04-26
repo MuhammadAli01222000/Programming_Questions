@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  provider: ^6.1.4
 
   url_launcher: ^6.3.1
 

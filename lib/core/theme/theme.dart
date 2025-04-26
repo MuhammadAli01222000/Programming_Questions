@@ -15,3 +15,8 @@ export 'package:programming_questions/core/config/app_routes.dart';
 export 'package:programming_questions/core/widgets/scroll_image.dart';
 export 'package:programming_questions/pages/questions.dart';
 export 'package:programming_questions/core/theme/theme.dart';
+export 'package:flutter/material.dart';
+export 'package:programming_questions/core/config/app_routes_name.dart';
+
+export 'package:programming_questions/provider/app_provider.dart';
+export 'package:provider/provider.dart';

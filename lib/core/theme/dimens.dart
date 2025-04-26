@@ -15,6 +15,7 @@ sealed class AppDimens {
   static const d40 = 40.0;
 
   static const d50 = 50.0;
+  static const d100 = 100.0;
 
   static const d150 = 150.0;
   static const d250 = 250.0;
@@ -31,6 +32,8 @@ sealed class AppDimens {
   static final c16 = BorderRadius.circular(AppDimens.d16);
 
   /// height
+  static const h30 = SizedBox(height: 30);
+
   static const h100 = SizedBox(height: 100);
   static const h300 = Size.fromHeight(300);
 }

@@ -11,6 +11,26 @@ class ResultScreen extends StatefulWidget {
 class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(appBar: _appBar());
+  }
+
+  PreferredSize _appBar() {
+    var scrollController;
+    return PreferredSize(
+      preferredSize: AppDimens.h300,
+      child: Container(
+        decoration: BoxDecoration(
+          shape: BoxShape.rectangle,
+          color: AppColors.green,
+          borderRadius: BorderRadius.circular(AppDimens.d30),
+        ),
+        child: Column(
+          children: [
+            const SizedBox(height: AppDimens.d50),
+            Text("Quiz result $correct", style: AppTextStyle.languageText),
+          ],
+        ),
+      ),
+    );
   }
 }

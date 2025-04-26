@@ -1,14 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:programming_questions/core/theme/dimens.dart';
 import 'package:programming_questions/core/theme/text_style.dart';
 import 'package:programming_questions/model/question_model.dart';
 
 class Savollar extends StatelessWidget {
-  const Savollar({
-    super.key,
-    required this.item,
-  });
+  const Savollar({super.key, required this.item});
 
   final QuestionModel item;
 
@@ -22,12 +18,9 @@ class Savollar extends StatelessWidget {
         margin: AppDimens.m20,
         child: SizedBox(
           width: AppDimens.d300,
-          height: 150,
+          height: AppDimens.d100,
           child: Center(
-            child: Text(
-              item.question,
-              style: AppTextStyle.questionsText,
-            ),
+            child: Text(item.question, style: AppTextStyle.questionsText),
           ),
         ),
       ),
