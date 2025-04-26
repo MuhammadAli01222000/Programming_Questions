@@ -58,10 +58,19 @@ class _HomeState extends State<Home> {
                 AppDimens.h100,
                 for (int i = 0; i < AppStrings.levelProgramist.length; i++)
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: AppDimens.p8,
                     child: AppCheckButton(
                       data: AppStrings.levelProgramist[i],
-                      onTap: () {},
+                      onTap: () {
+                        print("bosildi");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder:
+                                (BuildContext context) => const Questions(),
+                          ),
+                        );
+                      },
                     ),
                   ),
 

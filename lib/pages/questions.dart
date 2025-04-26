@@ -107,10 +107,7 @@ class _QuestionsState extends State<Questions> {
             onPressed: () {
               setState(() => showLink = !showLink);
             },
-            icon: Icon(
-              showLink ? Icons.link_off : Icons.link,
-              color: Colors.redAccent,
-            ),
+            icon: showLink ? AppIcons.link : AppIcons.linkOff,
           ),
         ),
       ],

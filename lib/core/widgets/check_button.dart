@@ -20,11 +20,7 @@ class _AppCheckButtonState extends State<AppCheckButton> {
       height: AppDimens.d50,
       child: OutlinedButton(
         style: AppButtonStyle.selectButtonStyle,
-        onPressed: () {
-          setState(() {
-            index++;
-          });
-        },
+        onPressed: widget.onTap,
         child: Text(widget.data, style: AppTextStyle.languageText),
       ),
     );
