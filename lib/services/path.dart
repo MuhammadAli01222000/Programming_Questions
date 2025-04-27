@@ -2,7 +2,7 @@
 
 sealed class PathManager {
   static const pythonJunior = "assets/json/python.json";
-  static const pythonMiddle = "assets/json/python_middle/python_middle.json";
+  static const pythonMiddle = "assets/json/python_middle/pyhton_middle.json";
   static const pythonSenior = "assets/json/python_senior/python_senior.json";
 
   static const javaJunior = "assets/json/java.json";

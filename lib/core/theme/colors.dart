@@ -9,6 +9,7 @@ sealed class AppColors {
   static const green = Color.fromARGB(255, 42, 201, 124);
   static const blue = Color.fromARGB(255, 24, 193, 226);
   static const yellow = Colors.yellowAccent;
+  static const red = Colors.redAccent;
 
   /// button color
   static const tranparent = Colors.transparent;

@@ -4,9 +4,11 @@ import 'package:programming_questions/services/data_controller.dart';
 class AppProvider extends ChangeNotifier {
   int questionIndex = 0;
   int correctAnswers = 0;
+  int wrong = 0;
   bool showLink = false;
   final DataController dataController = DataController();
 
+  // Savol indeksini yangilash
   int update(int n) {
     n = n++;
     notifyListeners();
@@ -16,9 +18,12 @@ class AppProvider extends ChangeNotifier {
   void checkAnswerAndIncrementIndex(
     List<String> variants,
     String correctAnswer,
+    String selectedAnswer,
   ) {
-    if (variants.contains(correctAnswer)) {
+    if (selectedAnswer == correctAnswer) {
       correctAnswers++;
+    } else {
+      wrong++;
     }
     questionIndex++;
     notifyListeners();

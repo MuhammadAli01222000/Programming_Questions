@@ -4,6 +4,8 @@ import 'package:programming_questions/core/widgets/app_button.dart';
 
 int correct = 0;
 bool lastIndex = false;
+bool last = false;
+int counter = 1;
 
 class Questions extends StatefulWidget {
   const Questions({super.key});
@@ -74,7 +76,7 @@ class _QuestionsState extends State<Questions> {
                 ],
               ),
             ),
-            Savollar(item: item),
+            last != true ? Savollar(item: item) : const Text(''),
             appProvider.showLink
                 ? Padding(
                   padding: AppDimens.p4,
@@ -91,28 +93,36 @@ class _QuestionsState extends State<Questions> {
                   child: SizedBox(height: AppDimens.d40),
                 ),
 
+            // javob
             ...item.variants.map((v) {
-              return Padding(
-                padding: AppDimens.p8,
-                child: SizedBox(
-                  width: AppDimens.d300,
-                  height: AppDimens.d60,
-                  child: OutlinedButton(
-                    style: AppButtonStyle.selectButtonStyle,
-                    onPressed: () {
-                      appProvider.checkAnswerAndIncrementIndex(
-                        dataController
-                            .items[appProvider.questionIndex]
-                            .variants,
-                        dataController
-                            .items[appProvider.questionIndex]
-                            .correctAnswer,
-                      );
-                    },
-                    child: Text(v, style: AppTextStyle.questionsText),
-                  ),
-                ),
-              );
+              return last != true
+                  ? Padding(
+                    padding: AppDimens.p8,
+                    child: SizedBox(
+                      width: AppDimens.d300,
+                      height: AppDimens.d60,
+                      child: OutlinedButton(
+                        style: AppButtonStyle.selectButtonStyle,
+                        onPressed: () {
+                          counter++;
+                          if (counter == length) {
+                            last = true;
+                          }
+                          appProvider.checkAnswerAndIncrementIndex(
+                            dataController
+                                .items[appProvider.questionIndex]
+                                .variants,
+                            dataController
+                                .items[appProvider.questionIndex]
+                                .correctAnswer,
+                            v,
+                          );
+                        },
+                        child: Text(v, style: AppTextStyle.questionsText),
+                      ),
+                    ),
+                  )
+                  : const Text('');
             }),
             AppDimens.h30,
             const ResultPageButton(),
