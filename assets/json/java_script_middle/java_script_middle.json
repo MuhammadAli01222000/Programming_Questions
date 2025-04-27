@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "JavaScriptda `let` bilan e'lon qilingan o'zgaruvchi qanday ishlaydi?",
+      "variant": ["Dinamik", "Statik", "O'zgarmaydi", "Yagona qiymat"],
+      "correct answer": "Dinamik",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"
+    },
+    {
+      "id": 2,
+      "question": "`===` va `==` o'rtasidagi farq nima?",
+      "variant": ["Ma'lumot turi tekshiriladi", "Faqat qiymat tekshiriladi", "Bir xil", "Hech narsa farq qilmaydi"],
+      "correct answer": "Ma'lumot turi tekshiriladi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness"
+    },
+    {
+      "id": 3,
+      "question": "`undefined` nima?",
+      "variant": ["Qiymat mavjud emas", "Null qiymat", "Doimiy", "Array"],
+      "correct answer": "Qiymat mavjud emas",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined"
+    },
+    {
+      "id": 4,
+      "question": "`typeof` operatori nima uchun ishlatiladi?",
+      "variant": ["Ma'lumot turini aniqlash", "Qiymatni almashtirish", "Array yaratish", "Math operatsiyasi"],
+      "correct answer": "Ma'lumot turini aniqlash",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
+    },
+    {
+      "id": 5,
+      "question": "JavaScriptda `this` nimani anglatadi?",
+      "variant": ["Joriy kontekst", "Global ob'ekt", "Null qiymat", "Undefined"],
+      "correct answer": "Joriy kontekst",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
+    },
+    {
+      "id": 6,
+      "question": "`Array`ni qanday e'lon qilish mumkin?",
+      "variant": ["[]", "{}", "()", "<>"],
+      "correct answer": "[]",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    },
+    {
+      "id": 7,
+      "question": "JavaScriptda `map()` metodi nima qiladi?",
+      "variant": ["Yangi array yaratadi", "Arrayni tekshiradi", "Element o'chiradi", "String yaratadi"],
+      "correct answer": "Yangi array yaratadi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+    },
+    {
+      "id": 8,
+      "question": "`setTimeout()` nima uchun ishlatiladi?",
+      "variant": ["Vaqtni kutish", "Elementni olib tashlash", "Function qaytarish", "Array yaratish"],
+      "correct answer": "Vaqtni kutish",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"
+    },
+    {
+      "id": 9,
+      "question": "`localStorage` nima uchun ishlatiladi?",
+      "variant": ["Ma'lumotni saqlash", "HTMLni yaratish", "CSSni qo'llash", "API chaqirish"],
+      "correct answer": "Ma'lumotni saqlash",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+    },
+    {
+      "id": 10,
+      "question": "`Promise` nima uchun ishlatiladi?",
+      "variant": ["Asinxron natija", "HTML yaratish", "Arrayni o'chirish", "String manipulyatsiyasi"],
+      "correct answer": "Asinxron natija",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+    },
+    {
+      "id": 11,
+      "question": "JavaScriptda `event` nima?",
+      "variant": ["Hodisani ifodalaydi", "O'zgaruvchi", "String", "Object"],
+      "correct answer": "Hodisani ifodalaydi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/Events"
+    },
+    {
+      "id": 12,
+      "question": "`function` kalit so'zi nima qiladi?",
+      "variant": ["Funktsiya yaratadi", "Array yaratadi", "Math operatsiyasi", "Object yaratadi"],
+      "correct answer": "Funktsiya yaratadi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+    },
+    {
+      "id": 13,
+      "question": "`undefined` va `null` o'rtasidagi farq nima?",
+      "variant": ["`undefined` avtomatik, `null` qo'lda beriladi", "`undefined` o'zgarmaydi", "`null` noaniq", "`undefined` qiymatga ega"],
+      "correct answer": "`undefined` avtomatik, `null` qo'lda beriladi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null"
+    },
+    {
+      "id": 14,
+      "question": "`filter()` metodi nima qiladi?",
+      "variant": ["Elementlarni tanlaydi", "Yangi array yaratadi", "Arrayni o'zgartiradi", "Elementni o'chiradi"],
+      "correct answer": "Elementlarni tanlaydi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+    },
+    {
+      "id": 15,
+      "question": "`async/await` nima uchun ishlatiladi?",
+      "variant": ["Asinxron kodni boshqarish", "Elementni kutish", "Array yaratish", "Class yaratish"],
+      "correct answer": "Asinxron kodni boshqarish",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await"
+    },
+    {
+      "id": 16,
+      "question": "JavaScriptda `forEach()` metodi nima qiladi?",
+      "variant": ["Arrayni aylantiradi", "Arrayni sortlaydi", "Arrayni o'chiradi", "Elementni qo'shadi"],
+      "correct answer": "Arrayni aylantiradi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+    },
+    {
+      "id": 17,
+      "question": "`constructor` nima?",
+      "variant": ["Ob'ektni yaratadi", "Elementni aniqlaydi", "Arrayni yaratadi", "Math operatsiyasini bajaradi"],
+      "correct answer": "Ob'ektni yaratadi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor"
+    },
+    {
+      "id": 18,
+      "question": "`map()` metodi qanday maqsadga xizmat qiladi?",
+      "variant": ["Yangi array yaratadi", "Arrayni sortlaydi", "Elementni olish", "Elementni o'zgartiradi"],
+      "correct answer": "Yangi array yaratadi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+    },
+    {
+      "id": 19,
+      "question": "`bind()` metodi nima qiladi?",
+      "variant": ["Funksiyaga yangi context qo'shadi", "Ob'ekt yaratadi", "Arrayni o'zgartiradi", "Elementni o'chiradi"],
+      "correct answer": "Funksiyaga yangi context qo'shadi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind"
+    },
+    {
+      "id": 20,
+      "question": "`reduce()` metodi nima qiladi?",
+      "variant": ["Elementlarni yig'adi", "Arrayni sortlaydi", "Elementni o'chiradi", "Elementni qo'shadi"],
+      "correct answer": "Elementlarni yig'adi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+    }
+  ]
+  

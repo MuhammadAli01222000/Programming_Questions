@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:programming_questions/core/theme/theme.dart';
 import 'package:programming_questions/pages/home.dart';
+
+int selectedIndex = 0;
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -58,11 +59,14 @@ class _SplashPageState extends State<SplashPage> {
                       padding: const EdgeInsets.all(8.0),
                       child: GestureDetector(
                         onTap: () {
+                          selectedIndex = index;
                           _currentImageIndex = index;
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (BuildContext context) => const Home(),
+                              builder:
+                                  (BuildContext context) =>
+                                      Home(selectedIndex: index),
                             ),
                           );
                         },
