@@ -15,6 +15,8 @@ sealed class AppDimens {
   static const d40 = 40.0;
 
   static const d50 = 50.0;
+  static const d60 = 65.0;
+
   static const d100 = 100.0;
 
   static const d150 = 150.0;
@@ -24,6 +26,7 @@ sealed class AppDimens {
   /// padding
   static const p16 = EdgeInsets.all(AppDimens.d16);
   static const p8 = EdgeInsets.all(AppDimens.d8);
+  static const p4 = EdgeInsets.all(4);
 
   /// margin
   static const m20 = EdgeInsets.symmetric(vertical: d20);

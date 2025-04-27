@@ -8,7 +8,7 @@ sealed class AppTextStyle {
     color: AppColors.white,
   );
   static const questionsText = TextStyle(
-    fontSize: AppDimens.d25,
+    fontSize: AppDimens.d16,
     fontWeight: FontWeight.w400,
     color: AppColors.white,
   );

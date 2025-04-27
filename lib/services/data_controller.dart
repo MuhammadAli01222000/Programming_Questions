@@ -1,8 +1,9 @@
-import 'dart:convert';
+// lib/services/data_controller.dart
 
+import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:programming_questions/model/question_model.dart';
-import 'package:programming_questions/services/data_source.dart';
+import 'package:programming_questions/services/path.dart';
 
 class DataController {
   DataController._();
@@ -11,55 +12,44 @@ class DataController {
 
   List<QuestionModel> _items = [];
   List<QuestionModel> get items => _items;
-  Future<void> initilize(String language, int level) async {
-    String path = '';
 
-    /// dart tiliga check
-    if (language == "dart") {
-      if (level == 0) {
-        path = dartJunior;
-      } else if (level == 1) {
-        path = dartMiddle;
-      } else if (level == 2) {
-        path = dartSenior;
-      }
-    }
-
-    ///java ga check
-    if (language == "java") {
-      if (level == 0) {
-        path = javaJunior;
-      } else if (level == 1) {
-        path = javaMiddle;
-      } else if (level == 2) {
-        path = javaSenior;
-      }
-    }
-
-    /// Js ga check
-    if (language == "javascript") {
-      if (level == 0) {
-        path = javaScriptJunior;
-      } else if (level == 1) {
-        path = javaScriptMiddle;
-      } else if (level == 2) {
-        path = javaScriptSenior;
-      }
-    }
-    if (language == "python") {
-      if (level == 0) {
-        path = pythonJunior;
-      } else if (level == 1) {
-        path = pythonMiddle;
-      } else if (level == 2) {
-        path = pythonSenior;
-      }
-    }
-
-    ///Python ga check
+  Future<void> initialize(String language, int level) async {
+    String path = _getPath(language, level);
 
     final jsonString = await rootBundle.loadString(path);
+    print("Path>>> $path");
     final List<dynamic> jsonData = json.decode(jsonString);
     _items = jsonData.map((item) => QuestionModel.fromJson(item)).toList();
+  }
+
+  String _getPath(String language, int level) {
+    switch (language.toLowerCase()) {
+      case "dart":
+        return level == 0
+            ? PathManager.dartJunior
+            : level == 1
+            ? PathManager.dartMiddle
+            : PathManager.dartSenior;
+      case "java":
+        return level == 0
+            ? PathManager.javaJunior
+            : level == 1
+            ? PathManager.javaMiddle
+            : PathManager.javaSenior;
+      case "javascript":
+        return level == 0
+            ? PathManager.javaScriptJunior
+            : level == 1
+            ? PathManager.javaScriptMiddle
+            : PathManager.javaScriptSenior;
+      case "python":
+        return level == 0
+            ? PathManager.pythonJunior
+            : level == 1
+            ? PathManager.pythonMiddle
+            : PathManager.pythonSenior;
+      default:
+        throw Exception("Unknown language: $language");
+    }
   }
 }

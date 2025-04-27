@@ -1,143 +1,142 @@
 [
-    {
-      "id": 1,
-      "question": "Python dasturlash tili kim tomonidan yaratilgan?",
-      "variant": ["Guido van Rossum", "James Gosling", "Dennis Ritchie", "Bjarne Stroustrup"],
-      "correct answer": "Guido van Rossum",
-      "infoLink": "https://en.wikipedia.org/wiki/Guido_van_Rossum"
-    },
-    {
-      "id": 2,
-      "question": "Python dasturlash tili nechanchi yilda yaratilgan?",
-      "variant": ["1989", "1991", "1995", "2000"],
-      "correct answer": "1991",
-      "infoLink": "https://en.wikipedia.org/wiki/Python_(programming_language)"
-    },
-    {
-      "id": 3,
-      "question": "Python qanday dasturlash paradigmasini qo‘llab-quvvatlaydi?",
-      "variant": ["Imperative", "Object-Oriented", "Functional", "Barchasi"],
-      "correct answer": "Barchasi",
-      "infoLink": "https://realpython.com/python-first-steps/#programming-paradigms"
-    },
-    {
-      "id": 4,
-      "question": "Python faylining kengaytmasi qanday bo‘ladi?",
-      "variant": [".py", ".java", ".js", ".cpp"],
-      "correct answer": ".py",
-      "infoLink": "https://docs.python.org/3/tutorial/"
-    },
-    {
-      "id": 5,
-      "question": "Python'da ro'yxat (list) qanday belgilanadi?",
-      "variant": ["{}", "()", "[]", "<>"],
-      "correct answer": "[]",
-      "infoLink": "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
-    },
-    {
-      "id": 6,
-      "question": "`len()` funksiyasi nima qiladi?",
-      "variant": ["Son qo‘shadi", "Uzunlikni hisoblaydi", "List yaratadi", "Stringga aylantiradi"],
-      "correct answer": "Uzunlikni hisoblaydi",
-      "infoLink": "https://www.w3schools.com/python/ref_func_len.asp"
-    },
-    {
-      "id": 7,
-      "question": "Python'da o‘zgaruvchi e’lon qilishda qanday kalit so‘z ishlatiladi?",
-      "variant": ["int", "let", "var", "Hech biri"],
-      "correct answer": "Hech biri",
-      "infoLink": "https://realpython.com/python-variables/"
-    },
-    {
-      "id": 8,
-      "question": "Python'da `if` operatori nima uchun ishlatiladi?",
-      "variant": ["Takrorlash", "Shart tekshirish", "Funksiya yaratish", "Fayl ochish"],
-      "correct answer": "Shart tekshirish",
-      "infoLink": "https://www.w3schools.com/python/python_conditions.asp"
-    },
-    {
-      "id": 9,
-      "question": "`for` sikli qanday ishlaydi?",
-      "variant": ["Fayl o‘qiydi", "Listdan o‘tadi", "Sinflar yaratadi", "String o‘zgartiradi"],
-      "correct answer": "Listdan o‘tadi",
-      "infoLink": "https://www.w3schools.com/python/python_for_loops.asp"
-    },
-    {
-      "id": 10,
-      "question": "`def` kalit so‘zi nima uchun ishlatiladi?",
-      "variant": ["Class e’lon qilish", "Fayl yaratish", "Funksiya e’lon qilish", "Import qilish"],
-      "correct answer": "Funksiya e’lon qilish",
-      "infoLink": "https://www.w3schools.com/python/python_functions.asp"
-    },
-    {
-      "id": 11,
-      "question": "`None` Python'da nimani anglatadi?",
-      "variant": ["0", "False", "Bo‘sh qiymat", "String"],
-      "correct answer": "Bo‘sh qiymat",
-      "infoLink": "https://realpython.com/python-null/"
-    },
-    {
-      "id": 12,
-      "question": "Python'da `try-except` bloklari nima uchun ishlatiladi?",
-      "variant": ["Funksiya chaqirish", "Fayl ochish", "Xatoliklarni ushlash", "Sikl yaratish"],
-      "correct answer": "Xatoliklarni ushlash",
-      "infoLink": "https://www.w3schools.com/python/python_try_except.asp"
-    },
-    {
-      "id": 13,
-      "question": "`import` kalit so‘zi nima uchun ishlatiladi?",
-      "variant": ["Fayl yaratish", "Kutubxona chaqirish", "String o‘zgartirish", "Foydalanuvchi kiritmasi"],
-      "correct answer": "Kutubxona chaqirish",
-      "infoLink": "https://docs.python.org/3/reference/import.html"
-    },
-    {
-      "id": 14,
-      "question": "`input()` funksiyasi nima qiladi?",
-      "variant": ["Chiqaradi", "Kiritma oladi", "Hisoblaydi", "Shart tekshiradi"],
-      "correct answer": "Kiritma oladi",
-      "infoLink": "https://www.w3schools.com/python/ref_func_input.asp"
-    },
-    {
-      "id": 15,
-      "question": "Python'da stringlar qanday belgilanadi?",
-      "variant": ["\" \" yoki ' '", "[]", "{}", "<>"],
-      "correct answer": "\" \" yoki ' '",
-      "infoLink": "https://www.w3schools.com/python/python_strings.asp"
-    },
-    {
-      "id": 16,
-      "question": "`range(5)` funksiyasi nima qaytaradi?",
-      "variant": ["[1,2,3,4,5]", "[0,1,2,3,4]", "[5,4,3,2,1]", "[0,5]"],
-      "correct answer": "[0,1,2,3,4]",
-      "infoLink": "https://www.w3schools.com/python/ref_func_range.asp"
-    },
-    {
-      "id": 17,
-      "question": "Python'da `class` nima uchun ishlatiladi?",
-      "variant": ["Funksiya yaratish", "Obyekt tuzish", "Kutubxona import qilish", "Ro‘yxat yaratish"],
-      "correct answer": "Obyekt tuzish",
-      "infoLink": "https://www.w3schools.com/python/python_classes.asp"
-    },
-    {
-      "id": 18,
-      "question": "Python interaktiv muhiti qanday ishga tushiriladi?",
-      "variant": ["python", "run", "main", "start"],
-      "correct answer": "python",
-      "infoLink": "https://realpython.com/python-command-line-arguments/"
-    },
-    {
-      "id": 19,
-      "question": "Python'da `lambda` funksiyasi nima?",
-      "variant": ["Anonim funksiya", "Shart operatori", "Xatolik turi", "Import funksiyasi"],
-      "correct answer": "Anonim funksiya",
-      "infoLink": "https://www.w3schools.com/python/python_lambda.asp"
-    },
-    {
-      "id": 20,
-      "question": "Python o‘zgaruvchilari uchun tur belgilash majburimi?",
-      "variant": ["Ha", "Yo‘q", "Ba'zida", "Faqat funksiyada"],
-      "correct answer": "Yo‘q",
-      "infoLink": "https://realpython.com/python-data-types/"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "question": "Flutterda `BuildContext` nima vazifani bajaradi?",
+    "variant": ["Statega kirish", "Theme yaratish", "Widget ichida Navigator chaqirish", "Fayl o‘qish"],
+    "correct answer": "Statega kirish",
+    "infoLink": "https://docs.flutter.dev/ui/layout/build"
+  },
+  {
+    "id": 2,
+    "question": "Dartda `Zone` lar nima uchun ishlatiladi?",
+    "variant": ["Asinxron kodni boshqarish", "Set yaratish", "State management", "Theme o'zgartirish"],
+    "correct answer": "Asinxron kodni boshqarish",
+    "infoLink": "https://api.dart.dev/stable/dart-async/Zone-class.html"
+  },
+  {
+    "id": 3,
+    "question": "`InheritedWidget` ning asosiy roli nima?",
+    "variant": ["Data sharing across widget tree", "Layout yaratish", "API chaqirish", "Animation qilish"],
+    "correct answer": "Data sharing across widget tree",
+    "infoLink": "https://docs.flutter.dev/ui/development/data-and-backend/state-mgmt/simple"
+  },
+  {
+    "id": 4,
+    "question": "Flutterda `Keys` nima uchun ishlatiladi?",
+    "variant": ["Widgetlarni aniqlash", "Theme yaratish", "Navigator uchun", "List yaratish"],
+    "correct answer": "Widgetlarni aniqlash",
+    "infoLink": "https://docs.flutter.dev/ui/advanced/keys"
+  },
+  {
+    "id": 5,
+    "question": "Dartda `Isolate` nima uchun ishlatiladi?",
+    "variant": ["Parallel ishlash", "UI yaratish", "String manipulation", "Database query"],
+    "correct answer": "Parallel ishlash",
+    "infoLink": "https://dart.dev/guides/concurrency/isolates"
+  },
+  {
+    "id": 6,
+    "question": "`TickerProvider` Flutterda nimaga kerak?",
+    "variant": ["Animation management", "Networking", "Storage", "List management"],
+    "correct answer": "Animation management",
+    "infoLink": "https://api.flutter.dev/flutter/scheduler/TickerProvider-class.html"
+  },
+  {
+    "id": 7,
+    "question": "Flutterda `RenderObject` qanday rol o‘ynaydi?",
+    "variant": ["Ekranga chizish", "API chaqirish", "State saqlash", "Theme yaratish"],
+    "correct answer": "Ekranga chizish",
+    "infoLink": "https://docs.flutter.dev/resources/architectural-overview#rendering-layer"
+  },
+  {
+    "id": 8,
+    "question": "Dartda `StreamTransformer` nima qiladi?",
+    "variant": ["Stream datani o‘zgartiradi", "New Stream yaratadi", "Streamni to‘xtatadi", "Streamni delete qiladi"],
+    "correct answer": "Stream datani o‘zgartiradi",
+    "infoLink": "https://api.dart.dev/stable/dart-async/StreamTransformer-class.html"
+  },
+  {
+    "id": 9,
+    "question": "Flutterda `Slivers` nimani anglatadi?",
+    "variant": ["Scrollable areas", "Widgets lifecycle", "State management", "Routing"],
+    "correct answer": "Scrollable areas",
+    "infoLink": "https://docs.flutter.dev/ui/advanced/slivers"
+  },
+  {
+    "id": 10,
+    "question": "`Hot reload` va `Hot restart` orasidagi farq nima?",
+    "variant": ["State saqlanadi yoki saqlanmaydi", "Memory clear bo'ladi", "Widget rebuild qilinadi", "Network reset"],
+    "correct answer": "State saqlanadi yoki saqlanmaydi",
+    "infoLink": "https://docs.flutter.dev/tools/hot-reload"
+  },
+  {
+    "id": 11,
+    "question": "Flutterda `GlobalKey` bilan `LocalKey` orasidagi asosiy farq nima?",
+    "variant": ["Scope", "Type", "State", "Animation"],
+    "correct answer": "Scope",
+    "infoLink": "https://api.flutter.dev/flutter/widgets/GlobalKey-class.html"
+  },
+  {
+    "id": 12,
+    "question": "`dart:ffi` paketi nimani qo‘llab-quvvatlaydi?",
+    "variant": ["Native C interop", "File system", "Animation", "Stream management"],
+    "correct answer": "Native C interop",
+    "infoLink": "https://dart.dev/guides/libraries/c-interop"
+  },
+  {
+    "id": 13,
+    "question": "Flutterda `RepaintBoundary` widgeti nima vazifani bajaradi?",
+    "variant": ["Render optimizatsiya", "State management", "Networking", "Gesture control"],
+    "correct answer": "Render optimizatsiya",
+    "infoLink": "https://docs.flutter.dev/perf/rendering/ui-performance#repaintboundary"
+  },
+  {
+    "id": 14,
+    "question": "`Future.microtask()` qachon bajariladi?",
+    "variant": ["Current event loop ichida", "Next event loop", "Timer orqali", "Isolate ichida"],
+    "correct answer": "Current event loop ichida",
+    "infoLink": "https://api.dart.dev/stable/dart-async/Future/microtask.html"
+  },
+  {
+    "id": 15,
+    "question": "Flutterda `didUpdateWidget()` qachon chaqiriladi?",
+    "variant": ["Widget configuration o'zgarsa", "Hot reload paytida", "App startida", "Navigator pushda"],
+    "correct answer": "Widget configuration o'zgarsa",
+    "infoLink": "https://api.flutter.dev/flutter/widgets/State/didUpdateWidget.html"
+  },
+  {
+    "id": 16,
+    "question": "`late final` o‘zgaruvchi nimani bildiradi?",
+    "variant": ["Birinchi foydalanishda init bo‘ladi", "Null safe emas", "Har safar yangi qiymat oladi", "Immutable emas"],
+    "correct answer": "Birinchi foydalanishda init bo‘ladi",
+    "infoLink": "https://dart.dev/null-safety/understanding-null-safety#late-variables"
+  },
+  {
+    "id": 17,
+    "question": "Flutterda `BuildOwner` ning vazifasi nima?",
+    "variant": ["Element tree ni boshqarish", "Database management", "Theme creation", "Animation yaratish"],
+    "correct answer": "Element tree ni boshqarish",
+    "infoLink": "https://github.com/flutter/flutter/wiki/Flutter-Rendering-Tree"
+  },
+  {
+    "id": 18,
+    "question": "Dartda `mixin` ning afzalligi nimada?",
+    "variant": ["Ko‘p martalik foydalanish", "Memory optimization", "Type safety", "Network optimization"],
+    "correct answer": "Ko‘p martalik foydalanish",
+    "infoLink": "https://dart.dev/language/mixins"
+  },
+  {
+    "id": 19,
+    "question": "Flutterda `Hero` widgetining asosiy vazifasi nima?",
+    "variant": ["Animated transition between screens", "Sliver optimization", "ListView scroll", "Theme switching"],
+    "correct answer": "Animated transition between screens",
+    "infoLink": "https://docs.flutter.dev/ui/animations/hero-animations"
+  },
+  {
+    "id": 20,
+    "question": "`State Restoration` Flutterda nimani anglatadi?",
+    "variant": ["App holatini tiklash", "Network caching", "UI rendering", "Gesture handling"],
+    "correct answer": "App holatini tiklash",
+    "infoLink": "https://docs.flutter.dev/development/ui/interactive#state-restoration"
+  }
+]

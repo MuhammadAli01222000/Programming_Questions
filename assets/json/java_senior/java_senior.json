@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "Java'da 'Deadlock' holati nimani anglatadi?",
+      "variant": ["Threadlar bir-birini bloklaydi", "Memory leak", "Stack overflow", "Data loss"],
+      "correct answer": "Threadlar bir-birini bloklaydi",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/essential/concurrency/deadlock.html"
+    },
+    {
+      "id": 2,
+      "question": "JVM'da 'PermGen' nimalar uchun ishlatiladi?",
+      "variant": ["Class metadata", "Heap memory", "Thread stack", "GC roots"],
+      "correct answer": "Class metadata",
+      "infoLink": "https://www.baeldung.com/java-permgen-metaspace"
+    },
+    {
+      "id": 3,
+      "question": "Java'da 'Metaspace' qaysi versiyada joriy etilgan?",
+      "variant": ["Java 8", "Java 7", "Java 9", "Java 6"],
+      "correct answer": "Java 8",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks002.html"
+    },
+    {
+      "id": 4,
+      "question": "SoftReference va WeakReference o'rtasidagi asosiy farq nima?",
+      "variant": ["GC tomonidan boshqarilish tezligi", "Thread safety", "Serialization", "Synchronization"],
+      "correct answer": "GC tomonidan boshqarilish tezligi",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/lang/ref/SoftReference.html"
+    },
+    {
+      "id": 5,
+      "question": "Java'da volatile va synchronized farqi nimada?",
+      "variant": ["Memory visibility va atomicity", "Both same", "Thread creation", "None"],
+      "correct answer": "Memory visibility va atomicity",
+      "infoLink": "https://www.baeldung.com/java-volatile"
+    },
+    {
+      "id": 6,
+      "question": "ThreadLocal nima uchun ishlatiladi?",
+      "variant": ["Threadga xos ma'lumot saqlash", "Global o'zgaruvchi", "Lock yaratish", "Object serialization"],
+      "correct answer": "Threadga xos ma'lumot saqlash",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html"
+    },
+    {
+      "id": 7,
+      "question": "Immutable object yaratilishining asosiy sababi nima?",
+      "variant": ["Thread safety", "Memory reduction", "GC optimization", "Lazy loading"],
+      "correct answer": "Thread safety",
+      "infoLink": "https://www.baeldung.com/java-immutable-objects"
+    },
+    {
+      "id": 8,
+      "question": "Java Memory Model (JMM) asosan nimani boshqaradi?",
+      "variant": ["Threadlar o'rtasida ma'lumot uzatish", "Garbage collection", "Database transactions", "Compilation"],
+      "correct answer": "Threadlar o'rtasida ma'lumot uzatish",
+      "infoLink": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-17.html"
+    },
+    {
+      "id": 9,
+      "question": "Java'da Fork/Join framework qaysi holatlar uchun ishlatiladi?",
+      "variant": ["Parallel task execution", "Network programming", "Serialization", "Reflection"],
+      "correct answer": "Parallel task execution",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html"
+    },
+    {
+      "id": 10,
+      "question": "Java'da Lock va ReentrantLock farqi nimada?",
+      "variant": ["More flexibility", "Thread creation", "Faster execution", "Memory consumption"],
+      "correct answer": "More flexibility",
+      "infoLink": "https://www.baeldung.com/java-reentrantlock-vs-synchronized"
+    },
+    {
+      "id": 11,
+      "question": "Java'da 'happens-before' tamoyili nimani anglatadi?",
+      "variant": ["Thread memory synchronization", "Execution time control", "Exception throwing", "Data serialization"],
+      "correct answer": "Thread memory synchronization",
+      "infoLink": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-17.html#jls-17.4.5"
+    },
+    {
+      "id": 12,
+      "question": "ConcurrentHashMap qanday ishlaydi?",
+      "variant": ["Segment-based locking", "Global lock", "Synchronized block", "Single thread"],
+      "correct answer": "Segment-based locking",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html"
+    },
+    {
+      "id": 13,
+      "question": "Java'da GC tuning qanday amalga oshiriladi?",
+      "variant": ["JVM options orqali", "Code optimization", "Heap size kamaytirish", "Thread pool oshirish"],
+      "correct answer": "JVM options orqali",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/index.html"
+    },
+    {
+      "id": 14,
+      "question": "Java Stream API da 'lazy evaluation' nimani bildiradi?",
+      "variant": ["Operation execution deferred", "Immediate result", "Multithreading", "Memory allocation"],
+      "correct answer": "Operation execution deferred",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html"
+    },
+    {
+      "id": 15,
+      "question": "Java'da reflection qanday xavf tug‘dirishi mumkin?",
+      "variant": ["Security vulnerability", "Memory leak", "Performance gain", "GC failure"],
+      "correct answer": "Security vulnerability",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/reflect/"
+    },
+    {
+      "id": 16,
+      "question": "Java'da 'CompletableFuture' nimani yaxshilaydi?",
+      "variant": ["Asinxron kod boshqaruvini", "Serialization", "Thread pooling", "Garbage collection"],
+      "correct answer": "Asinxron kod boshqaruvini",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html"
+    },
+    {
+      "id": 17,
+      "question": "Java NIO'da 'Selector' nimani anglatadi?",
+      "variant": ["Non-blocking multiplexing", "File IO", "Database pooling", "Thread pool management"],
+      "correct answer": "Non-blocking multiplexing",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/essential/io/notification.html"
+    },
+    {
+      "id": 18,
+      "question": "Why is Java String pool used?",
+      "variant": ["Memory optimization", "Speed reduction", "Thread synchronization", "File storage"],
+      "correct answer": "Memory optimization",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/data/strings.html"
+    },
+    {
+      "id": 19,
+      "question": "Java'da SoftReference asosiy maqsadi nima?",
+      "variant": ["Memory-sensitive caching", "Thread safety", "GC prevention", "Serialization"],
+      "correct answer": "Memory-sensitive caching",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/lang/ref/SoftReference.html"
+    },
+    {
+      "id": 20,
+      "question": "JVM'da Safepoint nima?",
+      "variant": ["Point where all threads stop safely", "Thread creation point", "GC failure", "Memory leak"],
+      "correct answer": "Point where all threads stop safely",
+      "infoLink": "https://wiki.openjdk.org/display/HotSpot/Safepoint"
+    }
+  ]
+  

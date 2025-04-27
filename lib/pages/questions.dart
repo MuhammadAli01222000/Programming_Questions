@@ -1,6 +1,9 @@
 import 'package:programming_questions/core/theme/theme.dart';
+import 'package:programming_questions/core/widgets/app_bar.dart';
+import 'package:programming_questions/core/widgets/app_button.dart';
 
 int correct = 0;
+bool lastIndex = false;
 
 class Questions extends StatefulWidget {
   const Questions({super.key});
@@ -10,16 +13,37 @@ class Questions extends StatefulWidget {
 }
 
 class _QuestionsState extends State<Questions> {
+  final ScrollController controller = ScrollController();
+
+  @override
+  void dispose() {
+    super.dispose();
+    controller.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
     final dataController = appProvider.dataController;
     final length = dataController.items.length;
-
     if (length == 0) {
-      return const Scaffold(
-        backgroundColor: AppColors.backroundColor,
-        body: Center(child: Text("Savollar topilmadi")),
+      return SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        controller: controller,
+        child: Scaffold(
+          backgroundColor: AppColors.backroundColor,
+          body: Center(
+            child: TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text(
+                "Savollar topilmadi\n Ortga qaytish uchun yozuv usiga bosing",
+                style: AppTextStyle.languageText,
+              ),
+            ),
+          ),
+        ),
       );
     }
 
@@ -38,7 +62,7 @@ class _QuestionsState extends State<Questions> {
               length: length,
             ),
             SizedBox(
-              height: AppDimens.d50,
+              height: AppDimens.d25,
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -53,7 +77,7 @@ class _QuestionsState extends State<Questions> {
             Savollar(item: item),
             appProvider.showLink
                 ? Padding(
-                  padding: AppDimens.p8,
+                  padding: AppDimens.p4,
                   child: OutlinedButton(
                     onPressed: () => openUrl(item.infoLink),
                     child: const Text(
@@ -64,7 +88,7 @@ class _QuestionsState extends State<Questions> {
                 )
                 : const Padding(
                   padding: AppDimens.p8,
-                  child: SizedBox(height: AppDimens.d50),
+                  child: SizedBox(height: AppDimens.d40),
                 ),
 
             ...item.variants.map((v) {
@@ -72,7 +96,7 @@ class _QuestionsState extends State<Questions> {
                 padding: AppDimens.p8,
                 child: SizedBox(
                   width: AppDimens.d300,
-                  height: AppDimens.d50,
+                  height: AppDimens.d60,
                   child: OutlinedButton(
                     style: AppButtonStyle.selectButtonStyle,
                     onPressed: () {
@@ -91,39 +115,10 @@ class _QuestionsState extends State<Questions> {
               );
             }),
             AppDimens.h30,
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, AppRoutesName.resultScreen);
-              },
-              style: const ButtonStyle(
-                backgroundColor: WidgetStatePropertyAll(AppColors.green),
-              ),
-              child: const Center(
-                child: Text('Result page', style: AppTextStyle.languageText),
-              ),
-            ),
+            const ResultPageButton(),
           ],
         ),
       ),
-    );
-  }
-
-  AppBar appBar(BuildContext context) {
-    final appProvider = Provider.of<AppProvider>(context, listen: false);
-    return AppBar(
-      leading: IconButton(
-        onPressed: () => AppRoutes.back(context),
-        icon: const Icon(Icons.arrow_back, color: AppColors.white),
-      ),
-      backgroundColor: AppColors.backroundColor,
-      actions: [
-        IconButton(
-          onPressed: () {
-            appProvider.toggleShowLink();
-          },
-          icon: appProvider.showLink ? AppIcons.link : AppIcons.linkOff,
-        ),
-      ],
     );
   }
 }

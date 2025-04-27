@@ -18,7 +18,7 @@ class Savollar extends StatelessWidget {
         margin: AppDimens.m20,
         child: SizedBox(
           width: AppDimens.d300,
-          height: AppDimens.d100,
+          height: AppDimens.d50,
           child: Center(
             child: Text(item.question, style: AppTextStyle.questionsText),
           ),

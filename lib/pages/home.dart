@@ -20,7 +20,6 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     final appProvider = Provider.of<AppProvider>(context, listen: false);
-
     if (widget.selectedIndex == 0) {
       selectedLanguage = "dart";
     } else if (widget.selectedIndex == 1) {
@@ -31,7 +30,7 @@ class _HomeState extends State<Home> {
       selectedLanguage = "python";
     }
 
-    futureData = appProvider.dataController.initilize(
+    futureData = appProvider.dataController.initialize(
       selectedLanguage,
       levelProgrammer,
     );
@@ -108,10 +107,18 @@ class _HomeState extends State<Home> {
                           padding: AppDimens.p8,
                           child: AppCheckButton(
                             data: AppStrings.levelProgramist[i],
-                            onTap: () {
+                            onTap: () async {
+                              final appProvider = Provider.of<AppProvider>(
+                                context,
+                                listen: false,
+                              );
                               setState(() {
                                 levelProgrammer = i;
                               });
+                              await appProvider.dataController.initialize(
+                                selectedLanguage,
+                                levelProgrammer,
+                              );
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
