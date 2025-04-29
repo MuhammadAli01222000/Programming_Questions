@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:programming_questions/core/theme/theme.dart';
 
 sealed class AppTextStyle {
@@ -33,8 +32,21 @@ sealed class AppTextStyle {
   );
 
   static const languageText = TextStyle(
-    fontSize: AppDimens.d25,
-    fontWeight: FontWeight.w400,
+    fontSize: 22,
+
+    fontWeight: FontWeight.bold,
+    color: AppColors.white,
+  );
+
+  static const tanlash = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+  );
+
+  static const pl = TextStyle(
+    fontSize: 28,
+    fontWeight: FontWeight.bold,
     color: AppColors.white,
   );
 }

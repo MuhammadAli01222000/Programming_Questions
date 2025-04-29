@@ -1,8 +1,8 @@
 import 'package:programming_questions/core/theme/theme.dart';
 import 'package:programming_questions/core/widgets/app_bar.dart';
 import 'package:programming_questions/core/widgets/app_button.dart';
+import 'package:programming_questions/pages/home.dart';
 
-int correct = 0;
 bool lastIndex = false;
 bool last = false;
 int counter = 1;
@@ -29,24 +29,7 @@ class _QuestionsState extends State<Questions> {
     final dataController = appProvider.dataController;
     final length = dataController.items.length;
     if (length == 0) {
-      return SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        controller: controller,
-        child: Scaffold(
-          backgroundColor: AppColors.backroundColor,
-          body: Center(
-            child: TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: const Text(
-                "Savollar topilmadi\n Ortga qaytish uchun yozuv usiga bosing",
-                style: AppTextStyle.languageText,
-              ),
-            ),
-          ),
-        ),
-      );
+      return IfListEmpty(controller: controller);
     }
 
     final item = dataController.items[appProvider.questionIndex];
@@ -58,7 +41,7 @@ class _QuestionsState extends State<Questions> {
         padding: AppDimens.p16,
         child: Column(
           children: [
-            const LanguageTextWidget(languageText: AppStrings.dart),
+            LanguageTextWidget(languageText: selectedLanguage.toUpperCase()),
             CountQuestionText(
               index: appProvider.questionIndex + 1,
               length: length,
@@ -127,6 +110,34 @@ class _QuestionsState extends State<Questions> {
             AppDimens.h30,
             const ResultPageButton(),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class IfListEmpty extends StatelessWidget {
+  const IfListEmpty({super.key, required this.controller});
+
+  final ScrollController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      controller: controller,
+      child: Scaffold(
+        backgroundColor: AppColors.backroundColor,
+        body: Center(
+          child: TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: const Text(
+              "Savollar topilmadi\n Ortga qaytish uchun yozuv usiga bosing",
+              style: AppTextStyle.languageText,
+            ),
+          ),
         ),
       ),
     );

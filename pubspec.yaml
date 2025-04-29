@@ -15,7 +15,7 @@ dependencies:
   url_launcher: ^6.3.1
 
   cupertino_icons: ^1.0.8
-
+  google_fonts: ^6.2.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -28,6 +28,10 @@ flutter:
   assets:
    - assets/image_code/
    - assets/image_languages/
+   - assets/image_languages/img.png
+   - assets/image_languages/img_2.png
+   - assets/image_languages/img_4.png
+   - assets/image_languages/img_5.png
    - assets/l10_png/
    - assets/animation/
    - assets/json/

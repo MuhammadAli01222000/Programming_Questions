@@ -32,7 +32,7 @@ class ScrollProgrammingLangugage extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     AppStrings.listImageText[i],
-                    style: AppTextStyle.languageText,
+                    style: AppTextStyle.pl,
                   ),
                 ),
                 Row(
@@ -44,7 +44,7 @@ class ScrollProgrammingLangugage extends StatelessWidget {
                         child: Center(
                           child: Text(
                             AppStrings.infoProgrammingLanguage[i],
-                            style: AppTextStyle.languageText,
+                            style: AppTextStyle.tanlash,
                           ),
                         ),
                       ),

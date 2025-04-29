@@ -1,102 +1,104 @@
-import 'package:programming_questions/core/theme/theme.dart';
-import 'package:programming_questions/pages/splash_screen.dart';
+import 'dart:ui';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class ResultScreen extends StatefulWidget {
+class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key});
 
   @override
-  State<ResultScreen> createState() => _ResultScreenState();
-}
-
-class _ResultScreenState extends State<ResultScreen> {
-  @override
   Widget build(BuildContext context) {
-    final appProvider = Provider.of<AppProvider>(context);
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (BuildContext context) => const SplashPage(),
-            ),
-          );
-        },
-        child: const Icon(Icons.home),
-      ),
-      appBar: _appBar(appProvider),
-      backgroundColor: AppColors.backroundColor,
-      body: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          AppDimens.h100,
-          ResultShow(
-            count: appProvider.correctAnswers,
-            color: AppColors.green,
-            name: 'Correct',
+      backgroundColor: Colors.transparent,
+      extendBodyBehindAppBar: true,
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color(0xFF0f2027), Color(0xFF203a43), Color(0xFF2c5364)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
-          AppDimens.h30,
-          ResultShow(
-            count: appProvider.wrong,
-            color: AppColors.red,
-            name: 'Wrong',
-          ),
-
-          AppDimens.h100,
-        ],
-      ),
-    );
-  }
-
-  PreferredSize _appBar(AppProvider appProvider) {
-    return PreferredSize(
-      preferredSize: AppDimens.h300,
-      child: Container(
-        decoration: BoxDecoration(
-          shape: BoxShape.rectangle,
-          color: AppColors.green,
-          borderRadius: BorderRadius.circular(AppDimens.d30),
         ),
-        child: Column(
-          children: [
-            const SizedBox(height: AppDimens.d50),
-            Padding(
-              padding: const EdgeInsets.all(80.0),
-              child: Text(
-                "Quiz result ${appProvider.correctAnswers}",
-                style: AppTextStyle.languageText,
-              ),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children: [
+                const SizedBox(height: 50),
+                GlassCard(text: "Quiz result 0"),
+                const SizedBox(height: 40),
+                GlassButton(text: "Correct 0", color: Colors.green),
+                const SizedBox(height: 20),
+                GlassButton(text: "Wrong 0", color: Colors.red),
+                const Spacer(),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: FloatingActionButton(
+                    backgroundColor: Colors.deepPurpleAccent,
+                    child: const Icon(Icons.home, color: Colors.white),
+                    onPressed: () {},
+                  ),
+                ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
   }
 }
 
-class ResultShow extends StatelessWidget {
-  final int count;
-  final Color color;
-  final String name;
-  const ResultShow({
-    super.key,
-    required this.count,
-    required this.color,
-    required this.name,
-  });
+class GlassCard extends StatelessWidget {
+  final String text;
+
+  const GlassCard({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: SizedBox(
-        width: AppDimens.d300,
-        height: AppDimens.d60,
-        child: Card(
-          color: color,
-          child: Center(
-            child: Text("$name $count", style: AppTextStyle.languageText),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(25),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+        child: Container(
+          width: double.infinity,
+          height: 150,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(25),
+            border: Border.all(color: Colors.white.withOpacity(0.2)),
+          ),
+          child: Text(
+            text,
+            style: GoogleFonts.poppins(
+              fontSize: 26,
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+            ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class GlassButton extends StatelessWidget {
+  final String text;
+  final Color color;
+
+  const GlassButton({super.key, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: color.withOpacity(0.8),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        minimumSize: const Size.fromHeight(55),
+      ),
+      onPressed: () {},
+      child: Text(
+        text,
+        style: GoogleFonts.poppins(fontSize: 18, color: Colors.white),
       ),
     );
   }

@@ -76,63 +76,71 @@ class _HomeState extends State<Home> {
             backgroundColor: AppColors.backroundColor,
             body: SingleChildScrollView(
               controller: controller,
-              child: Padding(
-                padding: AppDimens.p8,
-                child: Center(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      AppDimens.h100,
-                      const SizedBox(
-                        width: AppDimens.d300,
-                        height: AppDimens.d150,
-                        child: Card(
-                          color: AppColors.green,
-                          child: Center(
-                            child: Text(
-                              "Darajangizni tanlang",
-                              style: AppTextStyle.languageText,
-                            ),
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    AppDimens.h100,
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 24,
+                        vertical: 20,
+                      ),
+                      margin: const EdgeInsets.symmetric(horizontal: 32),
+                      decoration: BoxDecoration(
+                        color: AppColors.homeCard,
+                        borderRadius: AppDimens.c20,
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.black26,
+                            blurRadius: 10,
+                            offset: Offset(0, 4),
                           ),
+                        ],
+                      ),
+
+                      width: AppDimens.d300,
+                      height: AppDimens.d150,
+                      child: const Center(
+                        child: Text(
+                          "Darajangizni tanlang",
+                          style: AppTextStyle.languageText,
                         ),
                       ),
-                      AppDimens.h100,
-                      for (
-                        int i = 0;
-                        i < AppStrings.levelProgramist.length;
-                        i++
-                      )
-                        Padding(
-                          padding: AppDimens.p8,
-                          child: AppCheckButton(
-                            data: AppStrings.levelProgramist[i],
-                            onTap: () async {
-                              final appProvider = Provider.of<AppProvider>(
-                                context,
-                                listen: false,
-                              );
-                              setState(() {
-                                levelProgrammer = i;
-                              });
-                              await appProvider.dataController.initialize(
-                                selectedLanguage,
-                                levelProgrammer,
-                              );
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder:
-                                      (BuildContext context) =>
-                                          const Questions(),
-                                ),
-                              );
-                            },
-                          ),
+                    ),
+
+                    AppDimens.h100,
+                    for (int i = 0; i < AppStrings.levelProgramist.length; i++)
+                      Padding(
+                        padding: AppDimens.p8,
+                        child: AppCheckButton(
+                          color: AppColors.colorButton[i],
+                          data: AppStrings.levelProgramist[i],
+                          onTap: () async {
+                            final appProvider = Provider.of<AppProvider>(
+                              context,
+                              listen: false,
+                            );
+                            setState(() {
+                              levelProgrammer = i;
+                            });
+                            await appProvider.dataController.initialize(
+                              selectedLanguage,
+                              levelProgrammer,
+                            );
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder:
+                                    (BuildContext context) => const Questions(),
+                              ),
+                            );
+                          },
                         ),
-                      AppDimens.h100,
-                    ],
-                  ),
+                      ),
+                    AppDimens.h100,
+                  ],
                 ),
               ),
             ),

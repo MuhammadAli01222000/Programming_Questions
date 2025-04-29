@@ -1,8 +1,8 @@
 const listImageUrl = [
-  "/Users/mukxammadaligmail.com/StudioProjects/Programming_Questions/assets/image_languages/img_2.png",
-  "/Users/mukxammadaligmail.com/StudioProjects/Programming_Questions/assets/image_languages/img_4.png",
-  "/Users/mukxammadaligmail.com/StudioProjects/Programming_Questions/assets/image_languages/img_5.png",
-  "/Users/mukxammadaligmail.com/StudioProjects/Programming_Questions/assets/image_languages/img.png",
+  "assets/image_languages/img_2.png",
+  "assets/image_languages/img_4.png",
+  "assets/image_languages/img_5.png",
+  "assets/image_languages/img.png",
 ];
 
 sealed class AppStrings {

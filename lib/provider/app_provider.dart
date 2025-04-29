@@ -14,7 +14,7 @@ class AppProvider extends ChangeNotifier {
     notifyListeners();
     return n;
   }
-
+int  setter(int n)=>0;
   void checkAnswerAndIncrementIndex(
     List<String> variants,
     String correctAnswer,

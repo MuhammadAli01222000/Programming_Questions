@@ -44,19 +44,27 @@ class _SplashPageState extends State<SplashPage> {
           SizedBox(
             width: size - 3,
             height: 400,
-            child: GridView.builder(
-              itemCount: listImageUrl.length,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-              ),
-              itemBuilder: (BuildContext context, int index) {
-                return SizedBox(
-                  width: AppDimens.d150,
-                  height: AppDimens.d50,
-                  child: Card(
-                    color: AppColors.green,
+            child: Padding(
+              padding: const EdgeInsets.all(AppDimens.d16),
+              child: GridView.builder(
+                itemCount: listImageUrl.length,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: AppDimens.d20,
+                  mainAxisSpacing: AppDimens.d20,
+                ),
+                itemBuilder: (BuildContext context, int index) {
+                  return Container(
+                    width: AppDimens.d150,
+                    height: AppDimens.d50,
+                    decoration: BoxDecoration(
+                      color: AppColors.colorList[index],
+                      borderRadius: AppDimens.c20,
+                    ),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: AppDimens.d16,
+                      ),
                       child: GestureDetector(
                         onTap: () {
                           selectedIndex = index;
@@ -70,12 +78,16 @@ class _SplashPageState extends State<SplashPage> {
                             ),
                           );
                         },
-                        child: Image.asset(listImageUrl[index]),
+                        child: Image.asset(
+                          listImageUrl[index],
+                          height: AppDimens.d50,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
           ),
         ],
@@ -89,19 +101,21 @@ class _SplashPageState extends State<SplashPage> {
       child: Container(
         decoration: BoxDecoration(
           shape: BoxShape.rectangle,
-          color: AppColors.green,
+          color: AppColors.backroundColor,
           borderRadius: BorderRadius.circular(AppDimens.d30),
         ),
         child: Column(
           children: [
-            const SizedBox(height: AppDimens.d50),
+            const SizedBox(height: 78),
             SingleChildScrollView(
               physics: ScrollPhysics(),
               controller: scrollController,
               scrollDirection: Axis.horizontal,
-              child: ScrollProgrammingLangugage(
-                size: size,
-                imageIndex: _currentImageIndex,
+              child: Center(
+                child: ScrollProgrammingLangugage(
+                  size: size,
+                  imageIndex: _currentImageIndex,
+                ),
               ),
             ),
           ],
