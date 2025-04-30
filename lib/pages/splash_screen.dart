@@ -15,11 +15,6 @@ class _SplashPageState extends State<SplashPage> {
   final ScrollController scrollController = ScrollController();
 
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   void dispose() {
     super.dispose();
     scrollController.dispose;
@@ -99,26 +94,20 @@ class _SplashPageState extends State<SplashPage> {
     return PreferredSize(
       preferredSize: AppDimens.h300,
       child: Container(
+        padding: const EdgeInsets.only(top: AppDimens.d40, left: AppDimens.d12),
         decoration: BoxDecoration(
           shape: BoxShape.rectangle,
           color: AppColors.backroundColor,
           borderRadius: BorderRadius.circular(AppDimens.d30),
         ),
-        child: Column(
-          children: [
-            const SizedBox(height: 78),
-            SingleChildScrollView(
-              physics: ScrollPhysics(),
-              controller: scrollController,
-              scrollDirection: Axis.horizontal,
-              child: Center(
-                child: ScrollProgrammingLangugage(
-                  size: size,
-                  imageIndex: _currentImageIndex,
-                ),
-              ),
-            ),
-          ],
+        child: ListView.builder(
+          controller: scrollController,
+          physics: const PageScrollPhysics(),
+          scrollDirection: Axis.horizontal,
+          itemCount: listImageUrl.length,
+          itemBuilder: (context, index) {
+            return ScrollProgrammingLangugage(size: size, imageIndex: index);
+          },
         ),
       ),
     );

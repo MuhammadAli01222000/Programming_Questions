@@ -24,6 +24,20 @@ class _QuestionsState extends State<Questions> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    counter = 1;
+    last = false;
+    lastIndex = false;
+
+    final appProvider = Provider.of<AppProvider>(context, listen: false);
+    appProvider.questionIndex = 0;
+    appProvider.correctAnswers = 0;
+    appProvider.wrong = 0;
+    appProvider.showLink = false;
+  }
+
+  @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
     final dataController = appProvider.dataController;
@@ -87,6 +101,7 @@ class _QuestionsState extends State<Questions> {
                       child: OutlinedButton(
                         style: AppButtonStyle.selectButtonStyle,
                         onPressed: () {
+                          print('');
                           counter++;
                           if (counter == length) {
                             last = true;

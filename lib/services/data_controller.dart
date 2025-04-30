@@ -22,6 +22,11 @@ class DataController {
     _items = jsonData.map((item) => QuestionModel.fromJson(item)).toList();
   }
 
+  /// clear metod
+  void clear() {
+    _items = [];
+  }
+
   String _getPath(String language, int level) {
     switch (language.toLowerCase()) {
       case "dart":

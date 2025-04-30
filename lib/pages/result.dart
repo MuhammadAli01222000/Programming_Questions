@@ -1,14 +1,17 @@
 import 'dart:ui';
-import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
+import 'package:programming_questions/core/theme/theme.dart';
+import 'package:programming_questions/pages/splash_screen.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final appProvider = Provider.of<AppProvider>(context);
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      backgroundColor: AppColors.backroundColor,
       extendBodyBehindAppBar: true,
       body: Container(
         decoration: const BoxDecoration(
@@ -24,18 +27,42 @@ class ResultScreen extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: 50),
-                GlassCard(text: "Quiz result 0"),
+
+                const GlassCard(text: "Quiz result 0"),
                 const SizedBox(height: 40),
-                GlassButton(text: "Correct 0", color: Colors.green),
+                GlassButton(
+                  text: "Correct ${appProvider.correctAnswers}",
+                  color: Colors.green,
+                ),
                 const SizedBox(height: 20),
-                GlassButton(text: "Wrong 0", color: Colors.red),
+                GlassButton(
+                  text: "Wrong ${appProvider.correctAnswers}",
+                  color: Colors.red,
+                ),
+                const SizedBox(height: 20),
+
+                const GlassButton(
+                  text: "Question genarate with AI",
+                  color: Color.fromARGB(255, 6, 240, 127),
+                ),
                 const Spacer(),
                 Align(
                   alignment: Alignment.bottomRight,
                   child: FloatingActionButton(
                     backgroundColor: Colors.deepPurpleAccent,
                     child: const Icon(Icons.home, color: Colors.white),
-                    onPressed: () {},
+                    onPressed: () {
+                      /// screen da clear qilish
+                      appProvider.reset();
+
+                      Navigator.pushAndRemoveUntil<void>(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const SplashPage(),
+                        ),
+                        ModalRoute.withName('/'),
+                      );
+                    },
                   ),
                 ),
               ],

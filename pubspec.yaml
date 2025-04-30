@@ -8,6 +8,8 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
+  clay_containers: ^0.3.4
+
   flutter:
     sdk: flutter
   provider: ^6.1.4

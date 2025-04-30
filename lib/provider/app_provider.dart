@@ -14,7 +14,8 @@ class AppProvider extends ChangeNotifier {
     notifyListeners();
     return n;
   }
-int  setter(int n)=>0;
+
+  int setter(int n) => 0;
   void checkAnswerAndIncrementIndex(
     List<String> variants,
     String correctAnswer,
@@ -37,5 +38,15 @@ int  setter(int n)=>0;
   int levelProgrammen(int level) {
     int levelProgrammer = 0;
     return levelProgrammer;
+  }
+
+  /// back bolganda ishlaydi
+  void reset() {
+    questionIndex = 0;
+    correctAnswers = 0;
+    wrong = 0;
+    dataController.clear();
+    showLink = false;
+    notifyListeners();
   }
 }

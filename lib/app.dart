@@ -10,13 +10,9 @@ class ProgrammingQuestions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(
-          create: (context) => AppProvider(),
-        ), 
-      
-      ],
+      providers: [ChangeNotifierProvider(create: (context) => AppProvider())],
       child: MaterialApp(
+        //themeMode: ThemeMode.,
         routes: AppRoutes.routes,
         debugShowCheckedModeBanner: false,
         home: const SplashPage(),
