@@ -42,5 +42,5 @@ sealed class AppDimens {
   static const h30 = SizedBox(height: 30);
 
   static const h100 = SizedBox(height: 100);
-  static const h300 = Size.fromHeight(300);
+  static const h300 = Size.fromHeight(320);
 }

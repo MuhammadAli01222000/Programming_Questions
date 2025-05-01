@@ -1,11 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:programming_questions/core/widgets/app_bar.dart';
-import 'package:provider/provider.dart';
 import 'package:programming_questions/core/theme/theme.dart';
 import 'package:programming_questions/pages/erro_page.dart';
 import 'package:programming_questions/pages/home.dart';
 import 'package:programming_questions/pages/with_network/network_provider.dart';
-
 import '../../core/widgets/app_button.dart';
 import '../../model/question_model.dart';
 
@@ -20,7 +17,8 @@ class QuestionGenarateAi extends StatefulWidget {
 
 class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
   late Future<List<QuestionModel>> _futureQuestions;
-
+  int count = 0;
+  bool last = false;
   @override
   void initState() {
     super.initState();
@@ -30,20 +28,19 @@ class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
           listen: false,
         ).generateContentWithGemini();
   }
-  int count=0;
 
   @override
   Widget build(BuildContext context) {
+    final appProvider = Provider.of<AppProvider>(context);
+
     final network = Provider.of<NetworkStatus>(context);
+    // final correct = result[count].correctAnswer;
+
+    // internet bor yoki yoqligi
     if (!network.hasConnection) {
       return const NoInternetPage();
     }
-
-    final appProvider = Provider.of<AppProvider>(context);
-    final dataController = appProvider.dataController;
-    int length = list.length;
-
-    return length!=count? Scaffold(
+    return Scaffold(
       appBar: appBar(context),
       backgroundColor: AppColors.backroundColor,
       body: Padding(
@@ -51,12 +48,27 @@ class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
         child: FutureBuilder<List<QuestionModel>>(
           future: _futureQuestions,
           builder: (context, snapshot) {
+            /// load
             if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator(color: AppColors.white,));
-            } else if (snapshot.hasError) {
+              return const Center(
+                child: CircularProgressIndicator(color: AppColors.white),
+              );
+            }
+            // eroor
+            else if (snapshot.hasError) {
               return Center(child: Text("Xato yuz berdi: ${snapshot.error}"));
-            } else if (snapshot.hasData) {
+            }
+            // Ma'lumotlar mavjud bo‘lsa
+            else if (snapshot.hasData) {
               final result = snapshot.data!;
+
+              if (result.length < 20) {
+                return const Center(
+                  child: CircularProgressIndicator(color: AppColors.white),
+                );
+              }
+
+              int length = result.length;
 
               return Padding(
                 padding: AppDimens.p16,
@@ -65,24 +77,25 @@ class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
                     LanguageTextWidget(
                       languageText: selectedLanguage.toUpperCase(),
                     ),
-                    CountQuestionText(
-                      index: count + 1,
-                      length: length,
-                    ),
+
+                    CountQuestionText(index: count + 1, length: length),
                     SizedBox(
                       height: AppDimens.d25,
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           for (int i = 0; i < length; i++)
-                            SmallquestionCounter(
-                              index: count,
-                              i: i,
-                            ),
+                            SmallquestionCounter(index: count, i: i),
                         ],
                       ),
                     ),
-                    last != true ? Text( result[count].question,style: AppTextStyle.questionsText,) : const Text(''),
+                    last != true
+                        ? Text(
+                          result[count].question,
+                          style: AppTextStyle.questionsText,
+                        )
+                        : const Text(''),
+
                     appProvider.showLink
                         ? Padding(
                           padding: AppDimens.p4,
@@ -94,12 +107,7 @@ class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
                             ),
                           ),
                         )
-                        : const Padding(
-                          padding: AppDimens.p8,
-                          child: SizedBox(height: AppDimens.d40),
-                        ),
-
-                    // javob
+                        : const SizedBox(height: AppDimens.d40),
                     ...result[count].variant.map((v) {
                       return last != true
                           ? Padding(
@@ -111,11 +119,25 @@ class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
                                 style: AppButtonStyle.selectButtonStyle,
                                 onPressed: () {
                                   setState(() {
-                                    count++;
+                                    // check answer
+                                    setState(() {
+                                      if (v == result[count].correctAnswer) {
+                                        appProvider.correctAnswers++;
+                                      } else {
+                                        appProvider.wrong++;
+                                      }
+                                      count++;
+
+                                      if (count >= result.length) {
+                                        last = true;
+                                        // appProvider.correctAnswers = 0;
+                                        //appProvider.wrong = 0;
+                                        count =
+                                            result.length -
+                                            1; // countni oxirgi elementga tenglashtirish
+                                      }
+                                    });
                                   });
-                                  if (counter == length) {
-                                    last = true;
-                                  }
                                 },
                                 child: Text(
                                   v,
@@ -124,19 +146,20 @@ class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
                               ),
                             ),
                           )
-                          : const Text('');
-                    }),
+                          : const SizedBox();
+                    }).toList(),
+
                     AppDimens.h30,
                     const ResultPageButton(),
                   ],
                 ),
               );
             } else {
-              return const Center(child: Text("Natija topilmadi"));
+              return const Center(child: Text("Natijalar topilmadi"));
             }
           },
         ),
       ),
-    ):  Scaffold(appBar: AppBar(), body: Center(child: TextButton(onPressed: (){}, child: Text("Empty list"),),),);
+    );
   }
 }

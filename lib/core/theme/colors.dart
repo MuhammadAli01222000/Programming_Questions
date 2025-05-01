@@ -31,3 +31,27 @@ sealed class AppColors {
     Colors.redAccent,
   ];
 }
+
+class AppThemeLightAndDark {
+  static final ThemeData lightTheme = ThemeData(
+    brightness: Brightness.light,
+    scaffoldBackgroundColor: Colors.white,
+    primaryColor: Colors.blue,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: AppColors.mCard,
+      foregroundColor: AppColors.tranparent,
+    ),
+    textTheme: const TextTheme(bodyMedium: TextStyle(color: AppColors.white)),
+  );
+
+  static final ThemeData darkTheme = ThemeData(
+    brightness: Brightness.dark,
+    scaffoldBackgroundColor: AppColors.backroundColor,
+    primaryColor: Colors.deepPurple,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.black,
+      foregroundColor: Colors.white,
+    ),
+    textTheme: const TextTheme(bodyMedium: TextStyle(color: Colors.white)),
+  );
+}

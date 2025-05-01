@@ -1,4 +1,5 @@
 import 'package:programming_questions/core/theme/theme.dart';
+import 'package:programming_questions/l10n/l10.dart';
 import 'package:programming_questions/pages/home.dart';
 
 int selectedIndex = 0;
@@ -23,12 +24,14 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context).width;
+    //    AppLocalizations.of(context).welocme;
     return Scaffold(
       backgroundColor: AppColors.backroundColor,
       appBar: _appBar(size),
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          //   Text(AppLocalizations.of(context)!.welcome),
           const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(

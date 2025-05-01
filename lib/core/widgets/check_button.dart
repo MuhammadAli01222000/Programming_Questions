@@ -43,9 +43,7 @@ class _AppCheckButtonState extends State<AppCheckButton> {
 
           width: AppDimens.d300,
           height: AppDimens.d50,
-          child: OutlinedButton(
-            style: const ButtonStyle(elevation: WidgetStatePropertyAll(0)),
-
+          child: MaterialButton(
             onPressed: widget.onTap,
             child: Text(widget.data, style: AppTextStyle.languageText),
           ),

@@ -20,3 +20,4 @@ export 'package:programming_questions/core/config/app_routes_name.dart';
 
 export 'package:programming_questions/provider/app_provider.dart';
 export 'package:provider/provider.dart';
+export 'package:flutter_localizations/flutter_localizations.dart';

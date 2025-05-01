@@ -13,6 +13,8 @@ class DataController {
   List<QuestionModel> _items = [];
   List<QuestionModel> get items => _items;
 
+  /// jsonlar list
+
   Future<void> initialize(String language, int level) async {
     String path = _getPath(language, level);
 

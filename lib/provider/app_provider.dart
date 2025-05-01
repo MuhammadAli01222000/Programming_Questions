@@ -6,7 +6,8 @@ class AppProvider extends ChangeNotifier {
   int correctAnswers = 0;
   int wrong = 0;
   bool showLink = false;
-  final DataController dataController = DataController();
+  final DataController dataController =
+      DataController(); // controler da list bor json
 
   // Savol indeksini yangilash
   int update(int n) {

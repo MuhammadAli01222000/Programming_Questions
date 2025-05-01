@@ -104,7 +104,7 @@ class _HomeState extends State<Home> {
                       height: AppDimens.d150,
                       child: const Center(
                         child: Text(
-                          "Darajangizni tanlang",
+                          AppStrings.selectLevel,
                           style: AppTextStyle.languageText,
                         ),
                       ),

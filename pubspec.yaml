@@ -16,12 +16,16 @@ dependencies:
   url_launcher: ^6.3.1
   cupertino_icons: ^1.0.8
   circular_countdown_timer: ^0.2.1
-  
   google_fonts: ^6.2.1
-
   flutter:
     sdk: flutter
- 
+  flutter_localizations:
+    sdk: flutter
+
+  intl: ^0.19.0
+  flutter_gen: ^5.10.0
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -30,6 +34,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
 
   assets:
    - assets/image_code/

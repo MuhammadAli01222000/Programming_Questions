@@ -8,7 +8,7 @@
   },
   {
     "id": 2,
-    "question": "Dart dasturlash tilini kim ishlab chiqqan?",
+    "question": "Dart dasturlash tilini qaysi companya ishlab chiqqan?",
     "variant": ["Microsoft", "Oracle", "Google", "Facebook"],
     "correct answer": "Google",
     "infoLink": "https://dart.dev/overview"

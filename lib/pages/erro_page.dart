@@ -6,12 +6,15 @@ class NoInternetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red[100],
+      backgroundColor: AppColors.backroundColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Internet ulanmagan", style: TextStyle(fontSize: 20)),
+            const Text(
+              "Internet ulanmagan",
+              style: AppTextStyle.programmingLanguageText,
+            ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {

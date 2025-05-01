@@ -16,8 +16,8 @@
   {
     "id": 3,
     "question": "`InheritedWidget` ning asosiy roli nima?",
-    "variant": ["Data sharing across widget tree", "Layout yaratish", "API chaqirish", "Animation qilish"],
-    "correct answer": "Data sharing across widget tree",
+    "variant": ["Malumotlarni kerakli Widgetga yetkazish", "Layout yaratish", "API chaqirish", "Animation qilish"],
+    "correct answer": "Malumotlarni kerakli Widgetga yetkazish",
     "infoLink": "https://docs.flutter.dev/ui/development/data-and-backend/state-mgmt/simple"
   },
   {
@@ -36,9 +36,9 @@
   },
   {
     "id": 6,
-    "question": "`TickerProvider` Flutterda nimaga kerak?",
-    "variant": ["Animation management", "Networking", "Storage", "List management"],
-    "correct answer": "Animation management",
+    "question": "TickerProvider` Flutterda nimaga kerak?",
+    "variant": ["Flutterda animatsiyalarni boshqarishda kerakli interfeysdir", "Networking", "Storage", "List management"],
+    "correct answer": "Flutterda animatsiyalarni boshqarishda kerak bo'ladigan bir interfeysdir",
     "infoLink": "https://api.flutter.dev/flutter/scheduler/TickerProvider-class.html"
   },
   {
@@ -58,8 +58,8 @@
   {
     "id": 9,
     "question": "Flutterda `Slivers` nimani anglatadi?",
-    "variant": ["Scrollable areas", "Widgets lifecycle", "State management", "Routing"],
-    "correct answer": "Scrollable areas",
+    "variant": ["shifting ,scrollable kontent uchun ishlatiladigan kontentning bo'linmalari", "Widgets lifecycle", "State management", "Routing"],
+    "correct answer": "shifting ,scrollable kontent uchun ishlatiladigan kontentning bo'linmalari",
     "infoLink": "https://docs.flutter.dev/ui/advanced/slivers"
   },
   {
@@ -128,8 +128,8 @@
   {
     "id": 19,
     "question": "Flutterda `Hero` widgetining asosiy vazifasi nima?",
-    "variant": ["Animated transition between screens", "Sliver optimization", "ListView scroll", "Theme switching"],
-    "correct answer": "Animated transition between screens",
+    "variant": ["animatsion o‘tish (transition) effektlarini yaratish uchun ishlatiladi", "Sliver optimization", "ListView scroll", "Theme switching"],
+    "correct answer": "animatsion o‘tish (transition) effektlarini yaratish uchun ishlatiladi,",
     "infoLink": "https://docs.flutter.dev/ui/animations/hero-animations"
   },
   {

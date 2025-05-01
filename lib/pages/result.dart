@@ -11,6 +11,8 @@ class ResultScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
+    int result = appProvider.correctAnswers * 5;
+
     return Scaffold(
       backgroundColor: AppColors.backroundColor,
       extendBodyBehindAppBar: true,
@@ -29,7 +31,7 @@ class ResultScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 50),
 
-                const GlassCard(text: "Quiz result 0"),
+                GlassCard(text: "Quiz result $result%"),
                 const SizedBox(height: 40),
                 GlassButton(
                   text: "Correct ${appProvider.correctAnswers}",
@@ -37,7 +39,7 @@ class ResultScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 GlassButton(
-                  text: "Wrong ${appProvider.correctAnswers}",
+                  text: "Wrong ${appProvider.wrong}",
                   color: Colors.red,
                 ),
                 const SizedBox(height: 20),
@@ -55,6 +57,9 @@ class ResultScreen extends StatelessWidget {
                   },
                   child: GestureDetector(
                     onTap: () {
+                      appProvider.correctAnswers = 0;
+                      appProvider.wrong = 0;
+
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -72,7 +77,7 @@ class ResultScreen extends StatelessWidget {
                           end: Alignment.bottomRight,
                           tileMode: TileMode.repeated,
                         ),
-                        borderRadius: BorderRadius.circular(24),
+                        borderRadius: BorderRadius.circular(18),
                       ),
                       width: 350,
                       height: 50,
