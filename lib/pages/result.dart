@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:programming_questions/core/theme/theme.dart';
 import 'package:programming_questions/pages/splash_screen.dart';
+import 'package:programming_questions/pages/with_network/question_genarate_ai.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key});
@@ -41,9 +42,48 @@ class ResultScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
 
-                const GlassButton(
-                  text: "Question genarate with AI",
-                  color: Color.fromARGB(255, 6, 240, 127),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (BuildContext context) =>
+                                const QuestionGenarateAi(),
+                      ),
+                    );
+                  },
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder:
+                              (BuildContext context) =>
+                                  const QuestionGenarateAi(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                          colors: [Colors.red, Colors.blue],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          tileMode: TileMode.repeated,
+                        ),
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      width: 350,
+                      height: 50,
+                      child: const Center(
+                        child: Text(
+                          "WITH AI",
+                          style: AppTextStyle.languageText,
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
                 const Spacer(),
                 Align(

@@ -91,7 +91,7 @@ class _QuestionsState extends State<Questions> {
                 ),
 
             // javob
-            ...item.variants.map((v) {
+            ...item.variant.map((v) {
               return last != true
                   ? Padding(
                     padding: AppDimens.p8,
@@ -101,7 +101,6 @@ class _QuestionsState extends State<Questions> {
                       child: OutlinedButton(
                         style: AppButtonStyle.selectButtonStyle,
                         onPressed: () {
-                          print('');
                           counter++;
                           if (counter == length) {
                             last = true;
@@ -109,7 +108,7 @@ class _QuestionsState extends State<Questions> {
                           appProvider.checkAnswerAndIncrementIndex(
                             dataController
                                 .items[appProvider.questionIndex]
-                                .variants,
+                                .variant,
                             dataController
                                 .items[appProvider.questionIndex]
                                 .correctAnswer,
