@@ -5,15 +5,24 @@ class ResultPageButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        Navigator.pushNamed(context, AppRoutesName.resultScreen);
-      },
-      style: const ButtonStyle(
-        backgroundColor: WidgetStatePropertyAll(AppColors.green),
-      ),
-      child: const Center(
-        child: Text('Result page', style: AppTextStyle.languageText),
+    return SizedBox(
+      width: 300,
+      height: 60,
+      child: ElevatedButton(
+        onPressed: () {
+          Navigator.pushNamed(context, AppRoutesName.resultScreen);
+        },
+        style: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(AppColors.green),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(AppDimens.d12),
+            ),
+          ),
+        ),
+        child: const Center(
+          child: Text('Result page', style: AppTextStyle.languageText),
+        ),
       ),
     );
   }

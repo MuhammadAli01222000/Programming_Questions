@@ -107,7 +107,7 @@ class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
                             ),
                           ),
                         )
-                        : const SizedBox(height: AppDimens.d40),
+                        : const SizedBox(height: 56),
                     ...result[count].variant.map((v) {
                       return last != true
                           ? Padding(
@@ -149,7 +149,7 @@ class _QuestionGenarateAiState extends State<QuestionGenarateAi> {
                           : const SizedBox();
                     }).toList(),
 
-                    AppDimens.h30,
+                    const SizedBox(height: 74),
                     const ResultPageButton(),
                   ],
                 ),

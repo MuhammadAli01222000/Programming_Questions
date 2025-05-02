@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "question": "Question",
+  "quiz": "Quiz",
+  "python": "Python",
+  "java": "Java",
+  "javaScript": "JavaScript",
+  "dart": "Dart",
+  "selectLanguage": "Select a programming language",
+  "selectLevel": "Select your level",
+  "listImageText": ["Dart", "Java", "JavaScript", "Python"],
+  "infoProgrammingLanguage": [
+    "Dart: A modern and fast language used for Flutter development.",
+    "Java: One of the most widely used programming languages in the world.",
+    "JavaScript: A scripting language for making web pages interactive.",
+    "Python: Widely used in data analysis, AI, and robotics."
+  ],
+  "levelProgramist": ["Junior", "Middle", "Senior"]
+}

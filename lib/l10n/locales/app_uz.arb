@@ -1,0 +1,19 @@
+{
+  "@@locale": "uz",
+  "question": "Savol",
+  "quiz": "Test",
+  "python": "Python",
+  "java": "Java",
+  "javaScript": "Java Script",
+  "dart": "Dart",
+  "selectLanguage": "Dasturlash tilini tanlang",
+  "selectLevel": "Darajangizni tanlang",
+  "listImageText": ["Dart", "Java", "Java Script", "Python"],
+  "infoProgrammingLanguage": [
+    "Dart: Flutter uchun zamonaviy va tezkor dasturlash tili hisoblanadi.",
+    "Java: Dunyo bo‘yicha eng ko‘p qo‘llaniladigan dasturlash tillaridan biri.",
+    "JavaScript: Web uchun interaktiv dasturlash tili hisoblanadi.",
+    "Python: Maʼlumotlar tahlili, sunʼiy intellekt, robototexnika kabi sohalarda keng qoʻllaniladi."
+  ],
+  "levelProgramist": ["Junior", "Middle", "Senior"]
+}

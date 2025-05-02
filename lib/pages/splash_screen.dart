@@ -1,5 +1,5 @@
 import 'package:programming_questions/core/theme/theme.dart';
-import 'package:programming_questions/l10n/l10.dart';
+import 'package:programming_questions/l10n/locales/l10.dart';
 import 'package:programming_questions/pages/home.dart';
 
 int selectedIndex = 0;

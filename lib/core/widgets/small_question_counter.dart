@@ -13,7 +13,7 @@ class SmallquestionCounter extends StatelessWidget {
       child: SizedBox(
         width: AppDimens.d40,
         height: AppDimens.d15,
-        child: Card(color: index == i ? Colors.green : Colors.grey),
+        child: Card(color: (index >= i) ? Colors.green : Colors.grey),
       ),
     );
   }
