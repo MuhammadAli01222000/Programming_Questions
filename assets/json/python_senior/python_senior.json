@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "Python’da GIL (Global Interpreter Lock) nima va u qanday ishlaydi?",
+      "variant": ["Memory optimization", "Thread-safety for multi-core processors", "Used for optimizing list operations", "Ensures single-threaded execution"],
+      "correct answer": "Ensures single-threaded execution",
+      "infoLink": "https://realpython.com/python-gil/"
+    },
+    {
+      "id": 2,
+      "question": "Pythonda metaclass nima?",
+      "variant": ["Classni yaratadi", "Classni tekshiradi", "Obyektni yaratadi", "Classni o'zgartiradi"],
+      "correct answer": "Classni o'zgartiradi",
+      "infoLink": "https://realpython.com/python-metaclasses/"
+    },
+    {
+      "id": 3,
+      "question": "Pythonda `__call__` metodining vazifasi nima?",
+      "variant": ["Objectni chaqirish", "Classni chaqirish", "Methodni chaqirish", "Functionni chaqirish"],
+      "correct answer": "Objectni chaqirish",
+      "infoLink": "https://realpython.com/python-callable/"
+    },
+    {
+      "id": 4,
+      "question": "Pythonda `coroutine` va `generator` o'rtasidagi farq nima?",
+      "variant": ["Generator asinxron ishlaydi", "Coroutine generatorga qaraganda tezroq ishlaydi", "Coroutinelar faqat generatorlarda ishlatiladi", "Generatorlar asinxron ishlaydi"],
+      "correct answer": "Generator asinxron ishlaydi",
+      "infoLink": "https://realpython.com/python-coroutines-and-tasks/"
+    },
+    {
+      "id": 5,
+      "question": "`@property` dekori nima qiladi?",
+      "variant": ["Read-only property", "Setter uchun property", "Dynamic method", "Klassdagi xususiyatlarni o'zgartiradi"],
+      "correct answer": "Read-only property",
+      "infoLink": "https://realpython.com/python-property/"
+    },
+    {
+      "id": 6,
+      "question": "Python'da `__slots__` nima uchun ishlatiladi?",
+      "variant": ["Memoryni tejash", "Sinfni chaqirish", "Qo'shimcha xususiyatlar yaratish", "Functionlarni optimallashtirish"],
+      "correct answer": "Memoryni tejash",
+      "infoLink": "https://realpython.com/python-slots/"
+    },
+    {
+      "id": 7,
+      "question": "Pythonda `async` va `await` nima uchun ishlatiladi?",
+      "variant": ["Synchronous kodni bajarish", "Asinxron dasturlar yaratish", "Functionni to'xtatish", "Listni chiqarish"],
+      "correct answer": "Asinxron dasturlar yaratish",
+      "infoLink": "https://realpython.com/async-io-python/"
+    },
+    {
+      "id": 8,
+      "question": "Pythonda `yield` va `return` o'rtasidagi farq nima?",
+      "variant": ["`yield` generatorga qiymat qaytaradi, `return` funktsiyani tugatadi", "`yield` ro'yxatni qaytaradi", "`yield` faqat funksiyalar uchun", "`return` generator yaratadi"],
+      "correct answer": "`yield` generatorga qiymat qaytaradi, `return` funktsiyani tugatadi",
+      "infoLink": "https://realpython.com/introduction-to-python-generators/"
+    },
+    {
+      "id": 9,
+      "question": "`@lru_cache` dekoratori nima qiladi?",
+      "variant": ["Memoization uchun ishlatiladi", "Obyektlarni saqlash", "Methodni yozadi", "Class metodlarini optimallashtiradi"],
+      "correct answer": "Memoization uchun ishlatiladi",
+      "infoLink": "https://realpython.com/python-lru-cache/"
+    },
+    {
+      "id": 10,
+      "question": "Python’da `super()` kalit so'zi qanday ishlaydi?",
+      "variant": ["Super classni chaqiradi", "Funktsiyani chaqiradi", "Obyektni chaqiradi", "Classni yaratadi"],
+      "correct answer": "Super classni chaqiradi",
+      "infoLink": "https://realpython.com/python-super/"
+    },
+    {
+      "id": 11,
+      "question": "Python’da `multiprocessing` va `threading` o'rtasidagi farq nima?",
+      "variant": ["Multiprocessing ko'proq resurs talab qiladi", "Threading ko'proq resurs talab qiladi", "Multiprocessing parallel ishlaydi, threading esa bir xilda", "Multiprocessing asinxron ishlaydi"],
+      "correct answer": "Multiprocessing parallel ishlaydi, threading esa bir xilda",
+      "infoLink": "https://realpython.com/python-multiprocessing/"
+    },
+    {
+      "id": 12,
+      "question": "`asyncio` kutubxonasining asosiy foydasi nima?",
+      "variant": ["Asinxron vazifalarni bajarish", "Synchronous tasklarni bajarish", "Parallel kodlarni bajarish", "I/O operatsiyalarini optimallashtirish"],
+      "correct answer": "Asinxron vazifalarni bajarish",
+      "infoLink": "https://realpython.com/python-asyncio/"
+    },
+    {
+      "id": 13,
+      "question": "Python’da `metaclass` va `class` o'rtasidagi farq nima?",
+      "variant": ["Metaclass classni yaratadi", "Class metaclassni yaratadi", "Metaclass faqat metodlarni yaratadi", "Class faqat obyektlarni yaratadi"],
+      "correct answer": "Metaclass classni yaratadi",
+      "infoLink": "https://realpython.com/python-metaclasses/"
+    },
+    {
+      "id": 14,
+      "question": "Pythonda `__new__` metodining vazifasi nima?",
+      "variant": ["Obyektni yaratadi", "Classni yaratadi", "Metodni chaqiradi", "Objectni qaytaradi"],
+      "correct answer": "Obyektni yaratadi",
+      "infoLink": "https://realpython.com/python-new-method/"
+    },
+    {
+      "id": 15,
+      "question": "`@classmethod` va `@staticmethod` o'rtasidagi farq nima?",
+      "variant": ["Classmethod classga bog'liq, staticmethod esa faqat metodga bog'liq", "Classmethod faqat instanceni chaqiradi", "Staticmethod faqat metodni chaqiradi", "Ikkalasi ham classni chaqiradi"],
+      "correct answer": "Classmethod classga bog'liq, staticmethod esa faqat metodga bog'liq",
+      "infoLink": "https://realpython.com/python-class-method/"
+    },
+    {
+      "id": 16,
+      "question": "Python’da `__repr__` va `__str__` metodlari o'rtasidagi farq nima?",
+      "variant": ["`__repr__` debugging uchun, `__str__` esa human-readable format uchun", "`__str__` debugging uchun, `__repr__` esa human-readable format uchun", "`__repr__` faqat stringni qaytaradi", "`__str__` faqat metodlarni qaytaradi"],
+      "correct answer": "`__repr__` debugging uchun, `__str__` esa human-readable format uchun",
+      "infoLink": "https://realpython.com/python-str-repr/"
+    },
+    {
+      "id": 17,
+      "question": "Python’da `__slots__` imkoniyatlari qanday ishlaydi?",
+      "variant": ["Sinf xususiyatlarini cheklash", "Listni tezroq ishlatish", "Memoryni tejash", "Xususiyatlarni avtomatik yaratadi"],
+      "correct answer": "Sinf xususiyatlarini cheklash",
+      "infoLink": "https://realpython.com/python-slots/"
+    },
+    {
+      "id": 18,
+      "question": "`@property` dekori qanday ishlaydi?",
+      "variant": ["Xususiyatga getter va setterni yaratadi", "Xususiyatni `__call__` bilan chaqiradi", "Obyektni stringga o'zgartiradi", "Metodni o'zgartiradi"],
+      "correct answer": "Xususiyatga getter va setterni yaratadi",
+      "infoLink": "https://realpython.com/python-property/"
+    },
+    {
+      "id": 19,
+      "question": "Pythonda `__del__` metodining maqsadi nima?",
+      "variant": ["Destructor metod", "Funktsiyani yakunlaydi", "Objektni qaytaradi", "Metodni o'zgartiradi"],
+      "correct answer": "Destructor metod",
+      "infoLink": "https://realpython.com/python-destructor/"
+    },
+    {
+      "id": 20,
+      "question": "Pythonda `weakref` kutubxonasi nima uchun ishlatiladi?",
+      "variant": ["Obyektlarning kuchli havolalarini saqlash", "Obyektlarni avtomatik tozalash", "Obyektga havola yaratish", "Objektni avtomatik qaytarish"],
+      "correct answer": "Obyektga havola yaratish",
+      "infoLink": "https://realpython.com/python-weakref/"
+    }
+  ]
+  

@@ -1,0 +1,28 @@
+{
+  "@@locale": "ru",
+  "error": "Error",
+  "question": "Вопрос",
+  "quiz": "Викторина",
+  "python": "Python",
+  "java": "Java",
+  "javaScript": "JavaScript",
+  "dart": "Dart",
+  "selectLanguage": "Выберите язык программирования",
+  "selectLevel": "Выберите свой уровень",
+  "infoDart": "Dart — это современный быстрый язык для разработки на Flutter.",
+  "infoJava": "Java — один из самых популярных языков программирования в мире.",
+  "infoJS": "JavaScript используется для создания интерактивных веб-приложений.",
+  "infoPython": "Python широко используется в аналитике данных, ИИ, робототехнике и др.",
+  "levelJunior": "Junior",
+  "levelMiddle": "Middle",
+  "levelSenior": "Senior",
+  "resultPage":"Посмотреть результаты",
+  "correct": "Правильный ",
+  "wrong": "Неправильно ",
+  "result": "Ваш результат",
+  "info": "Подробнее читайте",
+  "withAi": "Вопросы с ИИ"
+
+
+
+}

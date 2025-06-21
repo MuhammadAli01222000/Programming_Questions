@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "Dartda `Cascade notation (..)` nimaga xizmat qiladi?",
+      "variant": ["Multiple operations", "Inheritance", "Null handling", "Loop"],
+      "correct answer": "Multiple operations",
+      "infoLink": "https://dart.dev/language#cascade"
+    },
+    {
+      "id": 2,
+      "question": "Dartda `enum` nima uchun ishlatiladi?",
+      "variant": ["Static qiymatlar", "Dynamic classlar", "String qo‘shish", "List yaratish"],
+      "correct answer": "Static qiymatlar",
+      "infoLink": "https://dart.dev/language/enums"
+    },
+    {
+      "id": 3,
+      "question": "Dartda `abstract` class nimani anglatadi?",
+      "variant": ["To'liq class", "Qo‘shimcha methodlar", "To‘liq bajarilmagan class", "Interface"],
+      "correct answer": "To‘liq bajarilmagan class",
+      "infoLink": "https://dart.dev/language/abstract-classes"
+    },
+    {
+      "id": 4,
+      "question": "Dartda `is` operatori nima uchun ishlatiladi?",
+      "variant": ["Tip tekshirish", "List yaratish", "Loop qilish", "Function chaqirish"],
+      "correct answer": "Tip tekshirish",
+      "infoLink": "https://dart.dev/language/operators#type-test-operators"
+    },
+    {
+      "id": 5,
+      "question": "`Set` kolleksiyasi nima bilan ajralib turadi?",
+      "variant": ["Unikal elementlar", "Kalit-qiymat", "Tartibli ro‘yxat", "Null qiymatlar"],
+      "correct answer": "Unikal elementlar",
+      "infoLink": "https://dart.dev/guides/libraries/library-tour#sets"
+    },
+    {
+      "id": 6,
+      "question": "Dartda `typedef` nima vazifani bajaradi?",
+      "variant": ["Type alias", "Class yaratadi", "Null qiladi", "Loop qiladi"],
+      "correct answer": "Type alias",
+      "infoLink": "https://dart.dev/language/typedefs"
+    },
+    {
+      "id": 7,
+      "question": "`await` faqat qaysi turdagi funksiyada ishlatiladi?",
+      "variant": ["Sync", "Async", "Constructor", "Getter"],
+      "correct answer": "Async",
+      "infoLink": "https://dart.dev/codelabs/async-await#await-expressions"
+    },
+    {
+      "id": 8,
+      "question": "`throw` operatori Dartda nimaga xizmat qiladi?",
+      "variant": ["Exception chiqarish", "List yaratish", "Function to'xtatish", "Loop boshqarish"],
+      "correct answer": "Exception chiqarish",
+      "infoLink": "https://dart.dev/guides/language/language-tour#exceptions"
+    },
+    {
+      "id": 9,
+      "question": "Dartda `getter` va `setter` nima uchun ishlatiladi?",
+      "variant": ["Ma'lumot o‘qish va o‘rnatish", "Function chaqirish", "Class meros olish", "Loop yaratish"],
+      "correct answer": "Ma'lumot o‘qish va o‘rnatish",
+      "infoLink": "https://dart.dev/language/getters-setters"
+    },
+    {
+      "id": 10,
+      "question": "`?.` operatori Dartda qanday ishlaydi?",
+      "variant": ["Null check bilan method chaqirish", "Always throw", "Null assignment", "Loop boshqaradi"],
+      "correct answer": "Null check bilan method chaqirish",
+      "infoLink": "https://dart.dev/null-safety#handling-references-to-objects"
+    },
+    {
+      "id": 11,
+      "question": "`super` kalit so‘zi Dartda nimani anglatadi?",
+      "variant": ["Parent classga murojaat", "Child class yaratish", "New object", "Global variable"],
+      "correct answer": "Parent classga murojaat",
+      "infoLink": "https://dart.dev/language/classes#extending-a-class"
+    },
+    {
+      "id": 12,
+      "question": "Dartda default parameterlar qanday beriladi?",
+      "variant": ["{} ichida", "[] ichida", "()", "'' ichida"],
+      "correct answer": "{} ichida",
+      "infoLink": "https://dart.dev/language/functions#optional-parameters"
+    },
+    {
+      "id": 13,
+      "question": "Dartda positional optional parameters qanday ko‘rsatiladi?",
+      "variant": ["[] ichida", "{} ichida", "()", "new keyword bilan"],
+      "correct answer": "[] ichida",
+      "infoLink": "https://dart.dev/language/functions#optional-parameters"
+    },
+    {
+      "id": 14,
+      "question": "`extension` Dartda nima uchun ishlatiladi?",
+      "variant": ["Classlarga method qo‘shish", "Variable yaratish", "Widget yasash", "Null handling"],
+      "correct answer": "Classlarga method qo‘shish",
+      "infoLink": "https://dart.dev/language/extension-methods"
+    },
+    {
+      "id": 15,
+      "question": "Dartda `Iterable` nima uchun ishlatiladi?",
+      "variant": ["Elementlar(List ,Set..)birma bir qaytarish ", "Null value", "Loop ichida switch", "Getter yaratish"],
+      "correct answer": "Elementlar(List ,Set..)birma bir qaytarish ",
+      "infoLink": "https://api.dart.dev/stable/dart-core/Iterable-class.html"
+    },
+    {
+      "id": 16,
+      "question": "`dynamic` tip Dartda nimani anglatadi?",
+      "variant": ["Istalgan tip", "Faqat String", "Null object", "Static type"],
+      "correct answer": "Istalgan tip",
+      "infoLink": "https://dart.dev/guides/language/type-system#the-dynamic-type"
+    },
+    {
+      "id": 17,
+      "question": "Dartda `String interpolation` qanday ko‘rsatiladi?",
+      "variant": ["$ belgisi bilan", "# belgisi bilan", "& belgisi bilan", "@ belgisi bilan"],
+      "correct answer": "r/$ belgisi bilan",
+      "infoLink": "https://dart.dev/guides/language/language-tour#strings"
+    },
+    {
+      "id": 18,
+      "question": "Dartda `const` konstruktor nimani beradi?",
+      "variant": ["Compile-time obyekt", "Dynamic type", "Null object", "Widget yaratish"],
+      "correct answer": "Compile-time obyekt",
+      "infoLink": "https://dart.dev/language/constructors#const-constructors"
+    },
+    {
+      "id": 19,
+      "question": "`noSuchMethod` qanday maqsadda ishlatiladi?",
+      "variant": ["Method mavjud emasligini ushlab qolish", "Loop qilish", "New object yaratish", "List yaratish"],
+      "correct answer": "Method mavjud emasligini ushlab qolish",
+      "infoLink": "https://dart.dev/language/classes#noSuchMethod"
+    },
+    {
+      "id": 20,
+      "question": "Dartda `assert` qanday vazifani bajaradi?",
+      "variant": ["Test qilish", "Widget yaratish", "Null qilish", "Loop boshqarish"],
+      "correct answer": "Test qilish",
+      "infoLink": "https://dart.dev/language/assert"
+    }
+  ]
+  

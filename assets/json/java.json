@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "Java dasturlash tili qachon ishlab chiqilgan?",
+      "variant": ["1995", "2000", "1990", "1998"],
+      "correct answer": "1995",
+      "infoLink": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+    },
+    {
+      "id": 2,
+      "question": "Java dasturlash tilini kim ishlab chiqqan?",
+      "variant": ["Google", "Microsoft", "Sun Microsystems", "IBM"],
+      "correct answer": "Sun Microsystems",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html"
+    },
+    {
+      "id": 3,
+      "question": "Java qanday tilda kompilyatsiya qilinadi?",
+      "variant": ["C", "Assembly", "Bytecode", "Machine code"],
+      "correct answer": "Bytecode",
+      "infoLink": "https://www.geeksforgeeks.org/java-bytecode/"
+    },
+    {
+      "id": 4,
+      "question": "JVM nima?",
+      "variant": ["Java Visual Machine", "Java Virtual Machine", "Just Very Modern", "Java Value Machine"],
+      "correct answer": "Java Virtual Machine",
+      "infoLink": "https://www.oracle.com/java/technologies/javase/jvm.html"
+    },
+    {
+      "id": 5,
+      "question": "Java'da `main` metodi qanday yoziladi?",
+      "variant": ["void main()", "public static main()", "public static void main(String[] args)", "static void main(String args)"],
+      "correct answer": "public static void main(String[] args)",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html"
+    },
+    {
+      "id": 6,
+      "question": "Java qanday turdagi dasturlash tilidir?",
+      "variant": ["Procedural", "Object-Oriented", "Functional", "Logical"],
+      "correct answer": "Object-Oriented",
+      "infoLink": "https://www.geeksforgeeks.org/object-oriented-programming-in-java/"
+    },
+    {
+      "id": 7,
+      "question": "Java’da `class` nima?",
+      "variant": ["Funksiya", "Ma'lumot turi", "Obyekt yaratuvchi shablon", "O'zgaruvchi"],
+      "correct answer": "Obyekt yaratuvchi shablon",
+      "infoLink": "https://www.w3schools.com/java/java_classes.asp"
+    },
+    {
+      "id": 8,
+      "question": "`public`, `private`, `protected` nima?",
+      "variant": ["Class nomlari", "Qarshi so‘zlar", "Access modifiers", "O'zgaruvchi nomlari"],
+      "correct answer": "Access modifiers",
+      "infoLink": "https://www.geeksforgeeks.org/access-modifiers-java/"
+    },
+    {
+      "id": 9,
+      "question": "`static` kalit so‘zi nimani bildiradi?",
+      "variant": ["O'zgaruvchini o'zgartirish", "Instance bog'lash", "Classga tegishli", "Tizim xatoliklari"],
+      "correct answer": "Classga tegishli",
+      "infoLink": "https://www.baeldung.com/java-static"
+    },
+    {
+      "id": 10,
+      "question": "`this` kalit so‘zi nimani bildiradi?",
+      "variant": ["Global o'zgaruvchi", "Superclass", "Joriy obyekt", "Null qiymat"],
+      "correct answer": "Joriy obyekt",
+      "infoLink": "https://www.geeksforgeeks.org/this-keyword-in-java/"
+    },
+    {
+      "id": 11,
+      "question": "Java'da exception handling qanday amalga oshiriladi?",
+      "variant": ["try-catch", "if-else", "loop", "check"],
+      "correct answer": "try-catch",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/essential/exceptions/"
+    },
+    {
+      "id": 12,
+      "question": "Java'da `interface` nima?",
+      "variant": ["Ma'lumotlar turi", "Abstract classga o‘xshash", "Constructor", "Loop turi"],
+      "correct answer": "Abstract classga o‘xshash",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html"
+    },
+    {
+      "id": 13,
+      "question": "`final` kalit so‘zi nima uchun ishlatiladi?",
+      "variant": ["Qayta belgilash", "O'chirish", "Doimiy qiymat", "Xatolik"],
+      "correct answer": "Doimiy qiymat",
+      "infoLink": "https://www.w3schools.com/java/ref_keyword_final.asp"
+    },
+    {
+      "id": 14,
+      "question": "Java'da `ArrayList` nima?",
+      "variant": ["Massiv", "Dinamik ro'yxat", "HashMap", "Set"],
+      "correct answer": "Dinamik ro'yxat",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html"
+    },
+    {
+      "id": 15,
+      "question": "Java'da `null` nimani anglatadi?",
+      "variant": ["0", "False", "Hech qanday qiymat emas", "To'g'ri qiymat"],
+      "correct answer": "Hech qanday qiymat emas",
+      "infoLink": "https://www.baeldung.com/java-null"
+    },
+    {
+      "id": 16,
+      "question": "`equals()` metodi nima qiladi?",
+      "variant": ["Obyektni nusxalaydi", "Obyektlarni taqqoslaydi", "Hash code qaytaradi", "Constructor yaratadi"],
+      "correct answer": "Obyektlarni taqqoslaydi",
+      "infoLink": "https://www.geeksforgeeks.org/overriding-equals-method-in-java/"
+    },
+    {
+      "id": 17,
+      "question": "Java’da `super` kalit so‘zi nima uchun ishlatiladi?",
+      "variant": ["Superclass metodini chaqirish", "Privatega kirish", "Null qilish", "Yangi obyekt yaratish"],
+      "correct answer": "Superclass metodini chaqirish",
+      "infoLink": "https://www.javatpoint.com/super-keyword"
+    },
+    {
+      "id": 18,
+      "question": "Java’da `for-each` sikli qachon ishlatiladi?",
+      "variant": ["Arraylarni ko‘rish", "O'zgaruvchi yaratish", "Class yaratish", "Method overload"],
+      "correct answer": "Arraylarni ko‘rish",
+      "infoLink": "https://www.w3schools.com/java/java_for_loop.asp"
+    },
+    {
+      "id": 19,
+      "question": "Java'da `String` immutable degani nima?",
+      "variant": ["O'zgaradi", "Null bo'lishi mumkin", "O'zgartirib bo'lmaydi", "HashCode o'zgartiriladi"],
+      "correct answer": "O'zgartirib bo'lmaydi",
+      "infoLink": "https://www.baeldung.com/java-string-immutable"
+    },
+    {
+      "id": 20,
+      "question": "Java'da `constructor` nima vazifa bajaradi?",
+      "variant": ["Method ishlatadi", "O'zgaruvchilarni o'chiradi", "Obyekt yaratadi", "Classni yo'q qiladi"],
+      "correct answer": "Obyekt yaratadi",
+      "infoLink": "https://www.w3schools.com/java/java_constructors.asp"
+    }
+  ]
+  

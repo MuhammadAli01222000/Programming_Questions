@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "Python’da `self` ni nimaga ishlatiladi?",
+      "variant": ["O'zgaruvchini anglatadi", "Classni anglatadi", "Metodlar uchun", "Objektni anglatadi"],
+      "correct answer": "Objektni anglatadi",
+      "infoLink": "https://realpython.com/python-self/"
+    },
+    {
+      "id": 2,
+      "question": "Pythonda `__init__` metodi nima qiladi?",
+      "variant": ["Classni yaratadi", "Obyektni yaratadi", "Konstruktorni o'rnatadi", "Destructor"],
+      "correct answer": "Konstruktorni o'rnatadi",
+      "infoLink": "https://realpython.com/python-class-constructor/"
+    },
+    {
+      "id": 3,
+      "question": "`Lambda` funktsiyalari qanday ishlaydi?",
+      "variant": ["Anonymous function", "Higher-order function", "Function with default value", "Function with decorators"],
+      "correct answer": "Anonymous function",
+      "infoLink": "https://realpython.com/python-lambda/"
+    },
+    {
+      "id": 4,
+      "question": "`map()` funksiyasi nima qiladi?",
+      "variant": ["Listni bir xil elementlarga o'zgartiradi", "Bir funktsiyani barcha elementlarga tatbiq etadi", "Elementlarni saralash", "Ikki ro'yxatni birlashtiradi"],
+      "correct answer": "Bir funktsiyani barcha elementlarga tatbiq etadi",
+      "infoLink": "https://realpython.com/python-map-function/"
+    },
+    {
+      "id": 5,
+      "question": "`filter()` funksiyasi nima uchun ishlatiladi?",
+      "variant": ["Shartga mos keladigan elementlarni ajratib olish", "Funktsiyani qaytaradi", "Ro'yxatni ajratib chiqaradi", "Mapping qilish"],
+      "correct answer": "Shartga mos keladigan elementlarni ajratib olish",
+      "infoLink": "https://realpython.com/python-filter-function/"
+    },
+    {
+      "id": 6,
+      "question": "Pythonda `global` kalit so'zi nima qiladi?",
+      "variant": ["Global o'zgaruvchilarni yaratadi", "O'zgaruvchining global qiymatini o'zgartiradi", "Global resursni bo'shatadi", "Global o'zgaruvchilarni aniqlaydi"],
+      "correct answer": "O'zgaruvchining global qiymatini o'zgartiradi",
+      "infoLink": "https://realpython.com/python-global-keyword/"
+    },
+    {
+      "id": 7,
+      "question": "`try-except` blokida `else` nima uchun ishlatiladi?",
+      "variant": ["Error ishlamagan holatda", "Functionni qaytaradi", "Errorni loglash", "Pochta jo'natish"],
+      "correct answer": "Error ishlamagan holatda",
+      "infoLink": "https://realpython.com/python-exceptions/#using-the-else-clause"
+    },
+    {
+      "id": 8,
+      "question": "`*args` va `**kwargs` farqi nima?",
+      "variant": ["`*args` ro'yxat, `**kwargs` dictionary", "`*args` function, `**kwargs` map", "`*args` tuple, `**kwargs` list", "`*args` set, `**kwargs` dictionary"],
+      "correct answer": "`*args` ro'yxat, `**kwargs` dictionary",
+      "infoLink": "https://realpython.com/python-kwargs-and-args/"
+    },
+    {
+      "id": 9,
+      "question": "`__str__` metodining vazifasi nima?",
+      "variant": ["Obyektni print qilish uchun stringga o'zgartirish", "Obyektni `repr()` yordamida ko'rsatish", "Obyektni o'zgartirish", "None"],
+      "correct answer": "Obyektni print qilish uchun stringga o'zgartirish",
+      "infoLink": "https://realpython.com/python-str-repr/"
+    },
+    {
+      "id": 10,
+      "question": "`@staticmethod` nimani bildiradi?",
+      "variant": ["Static method", "Normal method", "Class method", "Instance method"],
+      "correct answer": "Static method",
+      "infoLink": "https://realpython.com/python-static-method/"
+    },
+    {
+      "id": 11,
+      "question": "`@classmethod` qanday ishlaydi?",
+      "variant": ["Classga bog'liq metod", "Instancega bog'liq metod", "Funktsiyani o'zgartiradi", "Boshqa classni chaqiradi"],
+      "correct answer": "Classga bog'liq metod",
+      "infoLink": "https://realpython.com/python-class-method/"
+    },
+    {
+      "id": 12,
+      "question": "`__del__` metodining maqsadi nima?",
+      "variant": ["Destructor", "Funktsiyani to'xtatadi", "Obyektni yaratadi", "Obyektni stringga aylantiradi"],
+      "correct answer": "Destructor",
+      "infoLink": "https://realpython.com/python-destructor/"
+    },
+    {
+      "id": 13,
+      "question": "`with` statement nimani anglatadi?",
+      "variant": ["Context manager bilan ishlash", "Klassni yaratish", "Static method chaqirish", "Funktsiyani o'zgartirish"],
+      "correct answer": "Context manager bilan ishlash",
+      "infoLink": "https://realpython.com/python-with-statement/"
+    },
+    {
+      "id": 14,
+      "question": "`namedtuple` nima uchun ishlatiladi?",
+      "variant": ["Tupleni nomlash", "Listni aniqlash", "Named parameterlarni yaratish", "Setni yaratish"],
+      "correct answer": "Tupleni nomlash",
+      "infoLink": "https://realpython.com/python-namedtuple/"
+    },
+    {
+      "id": 15,
+      "question": "Pythonda mutaxassislar nimani tavsiya qiladi, iteratorlar bilan ishlash uchun?",
+      "variant": ["Generatorlar", "List comprehension", "Funktsiyalar", "Lambda functions"],
+      "correct answer": "Generatorlar",
+      "infoLink": "https://realpython.com/introduction-to-python-generators/"
+    },
+    {
+      "id": 16,
+      "question": "Pythonda `yield` nima?",
+      "variant": ["Functionda generator yaratish", "Recursion", "Listni qaytarish", "Funktsiyani to'xtatadi"],
+      "correct answer": "Functionda generator yaratish",
+      "infoLink": "https://realpython.com/introduction-to-python-generators/"
+    },
+    {
+      "id": 17,
+      "question": "Pythonda `deque` nima?",
+      "variant": ["Efficient queue", "Listning variant", "Tuplega o'xshash", "Setga o'xshash"],
+      "correct answer": "Efficient queue",
+      "infoLink": "https://realpython.com/python-deque/"
+    },
+    {
+      "id": 18,
+      "question": "`zip()` funksiyasi nima qiladi?",
+      "variant": ["Bir nechta ro'yxatlarni birlashtiradi", "Listni ayirish", "Listni tartibga solish", "Funktsiyani birlashtiradi"],
+      "correct answer": "Bir nechta ro'yxatlarni birlashtiradi",
+      "infoLink": "https://realpython.com/python-zip-function/"
+    },
+    {
+      "id": 19,
+      "question": "Pythonda `asyncio` nima uchun ishlatiladi?",
+      "variant": ["Asinxron dasturlarni yaratish", "Syncron dasturlarni yaratish", "Threadni yaratish", "List yaratish"],
+      "correct answer": "Asinxron dasturlarni yaratish",
+      "infoLink": "https://realpython.com/python-asyncio/"
+    },
+    {
+      "id": 20,
+      "question": "`assert` operatori qanday ishlaydi?",
+      "variant": ["Shartni tekshiradi", "Error chiqaradi", "Funktsiyani to'xtatadi", "Testni bajaraydi"],
+      "correct answer": "Shartni tekshiradi",
+      "infoLink": "https://realpython.com/python-assert/"
+    }
+  ]
+  

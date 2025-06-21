@@ -1,0 +1,26 @@
+{
+  "@@locale": "hi",
+  "error": "Error",
+  "question": "प्रश्न",
+  "quiz": "प्रश्नोत्तरी",
+  "python": "Python",
+  "java": "Java",
+  "javaScript": "JavaScript",
+  "dart": "Dart",
+  "selectLanguage": "प्रोग्रामिंग भाषा चुनें",
+  "selectLevel": "अपना स्तर चुनें",
+  "infoDart": "Dart एक आधुनिक तेज़ भाषा है जो Flutter विकास के लिए उपयोग की जाती है।",
+  "infoJava": "Java दुनिया की सबसे अधिक उपयोग की जाने वाली प्रोग्रामिंग भाषाओं में से एक है।",
+  "infoJS": "JavaScript इंटरैक्टिव वेब विकास के लिए उपयोग किया जाता है।",
+  "infoPython": "Python डेटा विश्लेषण, एआई, रोबोटिक्स आदि में व्यापक रूप से उपयोग होता है।",
+  "levelJunior": "Junior",
+  "levelMiddle": "Middle",
+  "levelSenior": "Senior",
+  "resultPage": "परिणाम देखें",
+  "correct": "सही",
+  "wrong": "गलत",
+  "result": "आपका परिणाम",
+  "info": "और पढ़ने के लिए",
+  "withAi": "एआई के साथ प्रश्न"
+
+}

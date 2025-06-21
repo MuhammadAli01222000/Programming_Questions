@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "JavaScriptda `this` konteksti qanday aniqlanadi?",
+      "variant": ["Calling context", "Global object", "Window object", "Closure"],
+      "correct answer": "Calling context",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
+    },
+    {
+      "id": 2,
+      "question": "`null` va `undefined` orasidagi farq nima?",
+      "variant": ["Null assigned, Undefined not assigned", "Both same", "Both errors", "Both objects"],
+      "correct answer": "Null assigned, Undefined not assigned",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null"
+    },
+    {
+      "id": 3,
+      "question": "Closure nima uchun kerak?",
+      "variant": ["Private data", "Global variables", "Memory leak", "Event bubbling"],
+      "correct answer": "Private data",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+    },
+    {
+      "id": 4,
+      "question": "`==` va `===` farqi nimada?",
+      "variant": ["Type coercion", "Same behavior", "Both strict", "None"],
+      "correct answer": "Type coercion",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness"
+    },
+    {
+      "id": 5,
+      "question": "Event Loop JavaScriptda qanday ishlaydi?",
+      "variant": ["Message queue orqali", "Multithreading", "Blocking IO", "Parallel processing"],
+      "correct answer": "Message queue orqali",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop"
+    },
+    {
+      "id": 6,
+      "question": "Promise va async/await o'rtasidagi bog'liqlik nima?",
+      "variant": ["Async/await Promiseni osonlashtiradi", "No relation", "Async is callback", "Await is event"],
+      "correct answer": "Async/await Promiseni osonlashtiradi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises"
+    },
+    {
+      "id": 7,
+      "question": "Hoisting nimani anglatadi?",
+      "variant": ["Declaration lifting", "Garbage collection", "Memory leak", "Thread blocking"],
+      "correct answer": "Declaration lifting",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Glossary/Hoisting"
+    },
+    {
+      "id": 8,
+      "question": "JavaScriptda `Object.freeze` nimani qiladi?",
+      "variant": ["Objectni o‘zgarmas qiladi", "Deep clone", "Garbage collection", "Memory leak"],
+      "correct answer": "Objectni o‘zgarmas qiladi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze"
+    },
+    {
+      "id": 9,
+      "question": "Event delegation nima?",
+      "variant": ["Parent orqali event boshqarish", "Event stopping", "Memory leak", "Global event"],
+      "correct answer": "Parent orqali event boshqarish",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_delegation"
+    },
+    {
+      "id": 10,
+      "question": "JavaScriptda setTimeout qanday ishlaydi?",
+      "variant": ["Callbackni kutib bajaradi", "Immediately runs", "Blocks thread", "Parallel execution"],
+      "correct answer": "Callbackni kutib bajaradi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"
+    },
+    {
+      "id": 11,
+      "question": "`prototype` va `__proto__` farqi nimada?",
+      "variant": ["Prototype function, proto instance", "Both same", "Global object", "Window object"],
+      "correct answer": "Prototype function, proto instance",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes"
+    },
+    {
+      "id": 12,
+      "question": "JavaScriptda memory leak sabablari?",
+      "variant": ["Uncleared references", "Garbage collection error", "Syntax error", "CPU overload"],
+      "correct answer": "Uncleared references",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management"
+    },
+    {
+      "id": 13,
+      "question": "What is debouncing?",
+      "variant": ["Delay event execution", "Speed up event", "Memory leak", "Thread blocking"],
+      "correct answer": "Delay event execution",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/Events/scroll#Debouncing_scroll_events"
+    },
+    {
+      "id": 14,
+      "question": "Spread operator (...) nimani anglatadi?",
+      "variant": ["Expand elements", "Reduce elements", "Memory allocation", "Parallel threads"],
+      "correct answer": "Expand elements",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax"
+    },
+    {
+      "id": 15,
+      "question": "JavaScriptda Temporal Dead Zone (TDZ) nima?",
+      "variant": ["Access before declaration", "Memory overflow", "Garbage collection", "Thread blocking"],
+      "correct answer": "Access before declaration",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#the_temporal_dead_zone"
+    },
+    {
+      "id": 16,
+      "question": "Strict mode ('use strict') qanday foyda beradi?",
+      "variant": ["Xatoliklarni aniqlash", "Execution speed increase", "Garbage collection", "CPU usage"],
+      "correct answer": "Xatoliklarni aniqlash",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"
+    },
+    {
+      "id": 17,
+      "question": "Map va Object o'rtasidagi asosiy farq nima?",
+      "variant": ["Map maintains order", "Object faster", "Map is class", "Object stores only strings"],
+      "correct answer": "Map maintains order",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map"
+    },
+    {
+      "id": 18,
+      "question": "Callback hell nima?",
+      "variant": ["Nested callbacks", "Promise chaining", "Thread overflow", "Memory leak"],
+      "correct answer": "Nested callbacks",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises#chaining_promises"
+    },
+    {
+      "id": 19,
+      "question": "Currying qanday ishlaydi?",
+      "variant": ["Function chaining", "Data cloning", "Memory saving", "Class creation"],
+      "correct answer": "Function chaining",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Glossary/Currying"
+    },
+    {
+      "id": 20,
+      "question": "Garbage collection JavaScriptda qanday sodir bo'ladi?",
+      "variant": ["Reachability-based", "Timer based", "Thread based", "User triggered"],
+      "correct answer": "Reachability-based",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management"
+    }
+  ]
+  

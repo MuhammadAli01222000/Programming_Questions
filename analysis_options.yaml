@@ -1,0 +1,11 @@
+
+include: package:flutter_lints/flutter.yaml
+linter:
+  rules:
+    # const va final bilan bog‘liq qoida va eslatmalar
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_literals_to_create_immutables
+    - unnecessary_const
+    - prefer_final_fields
+    - prefer_final_locals

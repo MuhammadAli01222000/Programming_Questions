@@ -1,0 +1,26 @@
+{
+  "@@locale": "en",
+  "error": "Error",
+  "question": "Question",
+  "quiz": "Quiz",
+  "python": "Python",
+  "java": "Java",
+  "javaScript": "JavaScript",
+  "dart": "Dart",
+  "selectLanguage": "Select a programming language",
+  "selectLevel": "Select your level",
+  "levelJunior": "Junior",
+  "levelMiddle": "Middle",
+  "levelSenior": "Senior",
+  "infoDart": "Dart is a modern and fast programming language used for Flutter development.",
+  "infoJava": "Java is one of the most widely used programming languages in the world.",
+  "infoJavaScript": "JavaScript is an interactive programming language used for the web.",
+  "infoPython": "Python is widely used in data analysis, artificial intelligence, and robotics.",
+  "resultPage": "View Results",
+  "correct": "Correct",
+  "wrong": "Incorrect",
+  "result": "Your result",
+  "info": "Read more",
+  "withAi": "Questions generated with AI"
+
+}

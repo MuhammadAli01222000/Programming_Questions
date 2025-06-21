@@ -1,0 +1,27 @@
+{
+  "@@locale": "uz",
+  "error": "Error",
+
+  "question": "Savol",
+  "quiz": "Viktorina",
+  "python": "Python",
+  "java": "Java",
+  "javaScript": "JavaScript",
+  "dart": "Dart",
+  "selectLanguage": "Dasturlash tilini tanlang",
+  "selectLevel": "Darajangizni tanlang",
+  "levelJunior": "Junior",
+  "levelMiddle": "Middle",
+  "levelSenior": "Senior",
+  "infoDart": "Dart — Flutter uchun zamonaviy va tezkor dasturlash tili hisoblanadi.",
+  "infoJava": "Java — dunyodagi eng ko‘p qo‘llaniladigan dasturlash tillaridan biridir.",
+  "infoJS": "JavaScript — veb uchun interaktiv dasturlash tili hisoblanadi.",
+  "infoJavaScript": "JavaScript — veb uchun interaktiv dasturlash tili hisoblanadi.",
+  "infoPython": "Python — ma'lumotlar tahlili, sun'iy intellekt, robototexnika kabi sohalarda keng qo‘llaniladi.",
+  "resultPage": "Natijalarni ko'rish",
+  "correct": "To‘g‘ri",
+  "wrong": "Noto‘g‘ri",
+  "result": "Sizning natijangiz",
+  "info": "Batafsil o‘qish uchun",
+  "withAi": "AI orqali savollar"
+}

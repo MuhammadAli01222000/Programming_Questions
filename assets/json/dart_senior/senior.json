@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Flutterda `BuildContext` nima vazifani bajaradi?",
+    "variant": ["Statega kirish", "Theme yaratish", "Widget ichida Navigator chaqirish", "Fayl o‘qish"],
+    "correct answer": "Statega kirish",
+    "infoLink": "https://docs.flutter.dev/ui/layout/build"
+  },
+  {
+    "id": 2,
+    "question": "Dartda `Zone` lar nima uchun ishlatiladi?",
+    "variant": ["Asinxron kodni boshqarish", "Set yaratish", "State management", "Theme o'zgartirish"],
+    "correct answer": "Asinxron kodni boshqarish",
+    "infoLink": "https://api.dart.dev/stable/dart-async/Zone-class.html"
+  },
+  {
+    "id": 3,
+    "question": "`InheritedWidget` ning asosiy roli nima?",
+    "variant": ["Malumotlarni kerakli Widgetga yetkazish", "Layout yaratish", "API chaqirish", "Animation qilish"],
+    "correct answer": "Malumotlarni kerakli Widgetga yetkazish",
+    "infoLink": "https://docs.flutter.dev/ui/development/data-and-backend/state-mgmt/simple"
+  },
+  {
+    "id": 4,
+    "question": "Flutterda `Keys` nima uchun ishlatiladi?",
+    "variant": ["Widgetlarni aniqlash", "Theme yaratish", "Navigator uchun", "List yaratish"],
+    "correct answer": "Widgetlarni aniqlash",
+    "infoLink": "https://docs.flutter.dev/ui/advanced/keys"
+  },
+  {
+    "id": 5,
+    "question": "Dartda `Isolate` nima uchun ishlatiladi?",
+    "variant": ["Parallel ishlash", "UI yaratish", "String manipulation", "Database query"],
+    "correct answer": "Parallel ishlash",
+    "infoLink": "https://dart.dev/guides/concurrency/isolates"
+  },
+  {
+    "id": 6,
+    "question": "TickerProvider` Flutterda nimaga kerak?",
+    "variant": ["Flutterda animatsiyalarni boshqarishda kerakli interfeysdir", "Networking", "Storage", "List management"],
+    "correct answer": "Flutterda animatsiyalarni boshqarishda kerak bo'ladigan bir interfeysdir",
+    "infoLink": "https://api.flutter.dev/flutter/scheduler/TickerProvider-class.html"
+  },
+  {
+    "id": 7,
+    "question": "Flutterda `RenderObject` qanday rol o‘ynaydi?",
+    "variant": ["Ekranga chizish", "API chaqirish", "State saqlash", "Theme yaratish"],
+    "correct answer": "Ekranga chizish",
+    "infoLink": "https://docs.flutter.dev/resources/architectural-overview#rendering-layer"
+  },
+  {
+    "id": 8,
+    "question": "Dartda `StreamTransformer` nima qiladi?",
+    "variant": ["Stream datani o‘zgartiradi", "New Stream yaratadi", "Streamni to‘xtatadi", "Streamni delete qiladi"],
+    "correct answer": "Stream datani o‘zgartiradi",
+    "infoLink": "https://api.dart.dev/stable/dart-async/StreamTransformer-class.html"
+  },
+  {
+    "id": 9,
+    "question": "Flutterda `Slivers` nimani anglatadi?",
+    "variant": ["shifting ,scrollable kontent uchun ishlatiladigan kontentning bo'linmalari", "Widgets lifecycle", "State management", "Routing"],
+    "correct answer": "shifting ,scrollable kontent uchun ishlatiladigan kontentning bo'linmalari",
+    "infoLink": "https://docs.flutter.dev/ui/advanced/slivers"
+  },
+  {
+    "id": 10,
+    "question": "`Hot reload` va `Hot restart` orasidagi farq nima?",
+    "variant": ["State saqlanadi yoki saqlanmaydi", "Memory clear bo'ladi", "Widget rebuild qilinadi", "Network reset"],
+    "correct answer": "State saqlanadi yoki saqlanmaydi",
+    "infoLink": "https://docs.flutter.dev/tools/hot-reload"
+  },
+  {
+    "id": 11,
+    "question": "Flutterda `GlobalKey` bilan `LocalKey` orasidagi asosiy farq nima?",
+    "variant": ["Scope", "Type", "State", "Animation"],
+    "correct answer": "Scope",
+    "infoLink": "https://api.flutter.dev/flutter/widgets/GlobalKey-class.html"
+  },
+  {
+    "id": 12,
+    "question": "`dart:ffi` paketi nimani qo‘llab-quvvatlaydi?",
+    "variant": ["Native C interop", "File system", "Animation", "Stream management"],
+    "correct answer": "Native C interop",
+    "infoLink": "https://dart.dev/guides/libraries/c-interop"
+  },
+  {
+    "id": 13,
+    "question": "Flutterda `RepaintBoundary` widgeti nima vazifani bajaradi?",
+    "variant": ["Render optimizatsiya", "State management", "Networking", "Gesture control"],
+    "correct answer": "Render optimizatsiya",
+    "infoLink": "https://docs.flutter.dev/perf/rendering/ui-performance#repaintboundary"
+  },
+  {
+    "id": 14,
+    "question": "`Future.microtask()` qachon bajariladi?",
+    "variant": ["Current event loop ichida", "Next event loop", "Timer orqali", "Isolate ichida"],
+    "correct answer": "Current event loop ichida",
+    "infoLink": "https://api.dart.dev/stable/dart-async/Future/microtask.html"
+  },
+  {
+    "id": 15,
+    "question": "Flutterda `didUpdateWidget()` qachon chaqiriladi?",
+    "variant": ["Widget configuration o'zgarsa", "Hot reload paytida", "App startida", "Navigator pushda"],
+    "correct answer": "Widget configuration o'zgarsa",
+    "infoLink": "https://api.flutter.dev/flutter/widgets/State/didUpdateWidget.html"
+  },
+  {
+    "id": 16,
+    "question": "`late final` o‘zgaruvchi nimani bildiradi?",
+    "variant": ["Birinchi foydalanishda init bo‘ladi", "Null safe emas", "Har safar yangi qiymat oladi", "Immutable emas"],
+    "correct answer": "Birinchi foydalanishda init bo‘ladi",
+    "infoLink": "https://dart.dev/null-safety/understanding-null-safety#late-variables"
+  },
+  {
+    "id": 17,
+    "question": "Flutterda `BuildOwner` ning vazifasi nima?",
+    "variant": ["Element tree ni boshqarish", "Database management", "Theme creation", "Animation yaratish"],
+    "correct answer": "Element tree ni boshqarish",
+    "infoLink": "https://github.com/flutter/flutter/wiki/Flutter-Rendering-Tree"
+  },
+  {
+    "id": 18,
+    "question": "Dartda `mixin` ning afzalligi nimada?",
+    "variant": ["Ko‘p martalik foydalanish", "Memory optimization", "Type safety", "Network optimization"],
+    "correct answer": "Ko‘p martalik foydalanish",
+    "infoLink": "https://dart.dev/language/mixins"
+  },
+  {
+    "id": 19,
+    "question": "Flutterda `Hero` widgetining asosiy vazifasi nima?",
+    "variant": ["animatsion o‘tish (transition) effektlarini yaratish uchun ishlatiladi", "Sliver optimization", "ListView scroll", "Theme switching"],
+    "correct answer": "animatsion o‘tish (transition) effektlarini yaratish uchun ishlatiladi,",
+    "infoLink": "https://docs.flutter.dev/ui/animations/hero-animations"
+  },
+  {
+    "id": 20,
+    "question": "`State Restoration` Flutterda nimani anglatadi?",
+    "variant": ["App holatini tiklash", "Network caching", "UI rendering", "Gesture handling"],
+    "correct answer": "App holatini tiklash",
+    "infoLink": "https://docs.flutter.dev/development/ui/interactive#state-restoration"
+  }
+]

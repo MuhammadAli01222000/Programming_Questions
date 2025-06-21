@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "JavaScript dasturlash tili qachon yaratilgan?",
+      "variant": ["1995", "2000", "1999", "1992"],
+      "correct answer": "1995",
+      "infoLink": "https://en.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "id": 2,
+      "question": "JavaScript dastlab kim tomonidan yaratilgan?",
+      "variant": ["Brendan Eich", "Bill Gates", "Mark Zuckerberg", "Guido van Rossum"],
+      "correct answer": "Brendan Eich",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction"
+    },
+    {
+      "id": 3,
+      "question": "JavaScript qanday turlarga ega?",
+      "variant": ["Dynamic", "Static", "Strong", "Weak"],
+      "correct answer": "Dynamic",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_typing"
+    },
+    {
+      "id": 4,
+      "question": "JavaScriptda `let` nimani anglatadi?",
+      "variant": ["O'zgaruvchi e'lon qilish", "Funktsiya", "Array", "Class"],
+      "correct answer": "O'zgaruvchi e'lon qilish",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"
+    },
+    {
+      "id": 5,
+      "question": "JavaScriptda `const` bilan e'lon qilingan o'zgaruvchi nima qiladi?",
+      "variant": ["O'zgarmaydi", "Doimiy o'zgaradi", "To‘g‘ri emas", "Undefined"],
+      "correct answer": "O'zgarmaydi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"
+    },
+    {
+      "id": 6,
+      "question": "`==` va `===` o'rtasidagi farq nima?",
+      "variant": ["Ma'lumot turi tekshiruvi", "Farqi yo‘q", "Har doim true", "Faqat null uchun farq"],
+      "correct answer": "Ma'lumot turi tekshiruvi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness"
+    },
+    {
+      "id": 7,
+      "question": "`typeof` operatori nima uchun ishlatiladi?",
+      "variant": ["Ma'lumot turini aniqlash", "Massiv yaratish", "Funktsiya e'lon qilish", "Scope yaratish"],
+      "correct answer": "Ma'lumot turini aniqlash",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
+    },
+    {
+      "id": 8,
+      "question": "`null` va `undefined` o‘rtasidagi farq nima?",
+      "variant": ["`null` qo‘lda beriladi, `undefined` avtomatik", "Ular bir xil", "`null` noto‘g‘ri", "`undefined` qiymat"],
+      "correct answer": "`null` qo‘lda beriladi, `undefined` avtomatik",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null"
+    },
+    {
+      "id": 9,
+      "question": "JavaScriptda array qanday aniqlanadi?",
+      "variant": ["[1, 2, 3]", "{1,2,3}", "(1,2,3)", "<1,2,3>"],
+      "correct answer": "[1, 2, 3]",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    },
+    {
+      "id": 10,
+      "question": "`function` kalit so‘zi nima qiladi?",
+      "variant": ["Funktsiya yaratadi", "O‘zgaruvchi e’lon qiladi", "Class ochadi", "Loop yaratadi"],
+      "correct answer": "Funktsiya yaratadi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+    },
+    {
+      "id": 11,
+      "question": "`for` sikli qanday ishlaydi?",
+      "variant": ["Takrorlash", "Class yaratish", "Shartli operator", "Null qiymat"],
+      "correct answer": "Takrorlash",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for"
+    },
+    {
+      "id": 12,
+      "question": "JavaScriptda async/await nimaga xizmat qiladi?",
+      "variant": ["Asinxron kod", "Massivlar bilan ishlash", "Sinflar", "O‘chirish funksiyasi"],
+      "correct answer": "Asinxron kod",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await"
+    },
+    {
+      "id": 13,
+      "question": "`Promise` nima uchun kerak?",
+      "variant": ["Asinxron natija", "Loop", "Class", "Object"],
+      "correct answer": "Asinxron natija",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+    },
+    {
+      "id": 14,
+      "question": "JavaScriptda `this` nimani anglatadi?",
+      "variant": ["Joriy kontekst", "Global", "Null", "Hech narsa"],
+      "correct answer": "Joriy kontekst",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
+    },
+    {
+      "id": 15,
+      "question": "JavaScriptda `event` nima?",
+      "variant": ["Hodisani ifodalaydi", "Massiv", "String", "O‘zgaruvchi"],
+      "correct answer": "Hodisani ifodalaydi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/Events"
+    },
+    {
+      "id": 16,
+      "question": "JavaScriptda DOM nima?",
+      "variant": ["Document Object Model", "Data Object Method", "Default Object Module", "None"],
+      "correct answer": "Document Object Model",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+    },
+    {
+      "id": 17,
+      "question": "JavaScriptda `addEventListener()` nima uchun ishlatiladi?",
+      "variant": ["Hodisaga quloq solish", "Funktsiya chaqirish", "DOMni o‘chirish", "API yaratish"],
+      "correct answer": "Hodisaga quloq solish",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
+    },
+    {
+      "id": 18,
+      "question": "JavaScriptda `map()` metodi nima qiladi?",
+      "variant": ["Yangi array yaratadi", "Element o‘chiradi", "String yaratadi", "Shart tekshiradi"],
+      "correct answer": "Yangi array yaratadi",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+    },
+    {
+      "id": 19,
+      "question": "JavaScriptda `localStorage` nima uchun ishlatiladi?",
+      "variant": ["Ma'lumotni saqlash", "HTML yaratish", "API chaqirish", "Rasm yuklash"],
+      "correct answer": "Ma'lumotni saqlash",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+    },
+    {
+      "id": 20,
+      "question": "`NaN` nimani bildiradi?",
+      "variant": ["Not a Number", "New array", "Null object", "Next action"],
+      "correct answer": "Not a Number",
+      "infoLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN"
+    }
+  ]
+  

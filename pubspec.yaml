@@ -1,0 +1,61 @@
+name: programming_questions
+description: "A new Flutter project"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  clay_containers: ^0.3.4
+  connectivity_plus: ^5.0.2
+  internet_connection_checker: ^1.0.0+1
+  http: ^1.2.1
+  provider: ^6.1.4
+  url_launcher: ^6.3.1
+  cupertino_icons: ^1.0.8
+  circular_countdown_timer: ^0.2.1
+  google_fonts: ^6.2.1
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  flutter_gen: ^5.10.0
+  flutter_svg: ^2.2.0
+  go_router: ^15.2.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+   - assets/image_languages/
+   - assets/image_languages/img.png
+   - assets/image_languages/img_2.png
+   - assets/image_languages/img_4.png
+   - assets/image_languages/img_5.png
+   - assets/l10_png/
+   - assets/animation/
+   - assets/l10_png/
+   - assets/json/
+   - assets/json/data.json
+   - assets/json/dart_middle/middle.json
+   - assets/json/dart_senior/senior.json
+   - assets/json/java.json
+   - assets/json/java_middle/java_middle.json
+   - assets/json/java_senior/java_senior.json
+   - assets/json/java_script.json
+   - assets/json/java_script_middle/java_script_middle.json
+   - assets/json/java_script_senior/java_script_senior.json
+   - assets/json/python.json
+   - assets/json/python_middle/pyhton_middle.json
+   - assets/json/python_senior/python_senior.json

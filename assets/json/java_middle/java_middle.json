@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "question": "Java dasturlash tilini kim yaratgan?",
+      "variant": ["Microsoft", "Sun Microsystems", "Apple", "IBM"],
+      "correct answer": "Sun Microsystems",
+      "infoLink": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+    },
+    {
+      "id": 2,
+      "question": "Java dasturlash tilida 'JVM' nima qiladi?",
+      "variant": ["Kod tarjima qiladi", "Kompilyatsiya qiladi", "Kod generatsiya qiladi", "Test qiladi"],
+      "correct answer": "Kod tarjima qiladi",
+      "infoLink": "https://docs.oracle.com/javase/specs/jvms/se17/html/"
+    },
+    {
+      "id": 3,
+      "question": "Java'da `final` kalit so‘zi nimani bildiradi?",
+      "variant": ["O‘zgarmas qiymat", "Private field", "Public method", "Static method"],
+      "correct answer": "O‘zgarmas qiymat",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/final.html"
+    },
+    {
+      "id": 4,
+      "question": "`HashMap` da kalitlar qanday saqlanadi?",
+      "variant": ["Hashcode bilan", "List ichida", "Tree ichida", "Stack ichida"],
+      "correct answer": "Hashcode bilan",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html"
+    },
+    {
+      "id": 5,
+      "question": "`Interface` va `Abstract class` orasidagi asosiy farq nima?",
+      "variant": ["Multiple inheritance", "Object creation", "Private field", "Final class"],
+      "correct answer": "Multiple inheritance",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html"
+    },
+    {
+      "id": 6,
+      "question": "Java'da `static` metodlar nima imkon beradi?",
+      "variant": ["Obyektsiz chaqirish", "Private qilish", "Override qilish", "Synchronize qilish"],
+      "correct answer": "Obyektsiz chaqirish",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html"
+    },
+    {
+      "id": 7,
+      "question": "`try-with-resources` blokining vazifasi nima?",
+      "variant": ["Resursni avtomatik yopish", "Exception handle", "Thread yaratish", "Stream yaratish"],
+      "correct answer": "Resursni avtomatik yopish",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html"
+    },
+    {
+      "id": 8,
+      "question": "Java'da `volatile` kalit so‘zi nimani anglatadi?",
+      "variant": ["Thread safe variable", "Static o‘zgaruvchi", "Final qiymat", "Garbage collection"],
+      "correct answer": "Thread safe variable",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/essential/concurrency/volatile.html"
+    },
+    {
+      "id": 9,
+      "question": "Java'da `ExecutorService` nimani boshqaradi?",
+      "variant": ["Threadlarni", "Exceptions", "Files", "Databases"],
+      "correct answer": "Threadlarni",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html"
+    },
+    {
+      "id": 10,
+      "question": "`equals()` va `==` operatorlari orasidagi farq nima?",
+      "variant": ["Object qiymati va referensi", "Faqat reference", "Faqat qiymat", "Null tekshirish"],
+      "correct answer": "Object qiymati va referensi",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html"
+    },
+    {
+      "id": 11,
+      "question": "Java'da `Enum` nima uchun ishlatiladi?",
+      "variant": ["Konstantalar guruhlash", "Thread management", "Database connection", "Garbage collection"],
+      "correct answer": "Konstantalar guruhlash",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html"
+    },
+    {
+      "id": 12,
+      "question": "Java Collection Frameworkda `Set` qanday xususiyatga ega?",
+      "variant": ["Unique elementlar", "Key-value saqlash", "Sorted elementlar", "FIFO saqlash"],
+      "correct answer": "Unique elementlar",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/util/Set.html"
+    },
+    {
+      "id": 13,
+      "question": "Java'da `synchronized` kalit so‘zi nima vazifa bajaradi?",
+      "variant": ["Threadlar orasida lock yaratadi", "Garbage collection", "Stream management", "Networking"],
+      "correct answer": "Threadlar orasida lock yaratadi",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html"
+    },
+    {
+      "id": 14,
+      "question": "`StringBuilder` va `StringBuffer` orasidagi farq nima?",
+      "variant": ["Thread safety", "Memory usage", "Immutable", "Performance"],
+      "correct answer": "Thread safety",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/data/buffers.html"
+    },
+    {
+      "id": 15,
+      "question": "Java'da `Garbage Collector` vazifasi nima?",
+      "variant": ["Keraksiz obyektlarni tozalash", "Thread yaratish", "Database connection", "Exception throwing"],
+      "correct answer": "Keraksiz obyektlarni tozalash",
+      "infoLink": "https://docs.oracle.com/javase/specs/jvms/se17/html/jvms-2.html#jvms-2.5.3"
+    },
+    {
+      "id": 16,
+      "question": "Java'da `lambda expressions` qaysi versiyada joriy qilingan?",
+      "variant": ["Java 8", "Java 7", "Java 6", "Java 9"],
+      "correct answer": "Java 8",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html"
+    },
+    {
+      "id": 17,
+      "question": "Java'da `Optional` class qanday vazifani bajaradi?",
+      "variant": ["NullPointerException oldini olish", "Thread yaratish", "Stream manipulation", "IO Management"],
+      "correct answer": "NullPointerException oldini olish",
+      "infoLink": "https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html"
+    },
+    {
+      "id": 18,
+      "question": "Java'da `default` metod Interface ichida nima uchun ishlatiladi?",
+      "variant": ["Backward compatibility", "Thread management", "Stream management", "File management"],
+      "correct answer": "Backward compatibility",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html"
+    },
+    {
+      "id": 19,
+      "question": "Java'da `super` kalit so‘zi nimani bildiradi?",
+      "variant": ["Parent classga murojaat", "Child class yaratish", "Object deletion", "New keyword"],
+      "correct answer": "Parent classga murojaat",
+      "infoLink": "https://docs.oracle.com/javase/tutorial/java/IandI/super.html"
+    },
+    {
+      "id": 20,
+      "question": "Java Memory Model (JMM) nima bilan bog‘liq?",
+      "variant": ["Multithreading", "Database", "Networking", "File IO"],
+      "correct answer": "Multithreading",
+      "infoLink": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-17.html"
+    }
+  ]
+  
